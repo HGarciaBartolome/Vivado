@@ -1,0 +1,1053 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:05:29 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 4220
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Dec 06 19:12:27 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+Java executable: 	C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	edulu
+User home directory: C:/Users/edulu
+User working directory: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2023.1
+RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2023.1/bin
+
+Vivado preferences file: C:/Users/edulu/AppData/Roaming/Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: C:/Users/edulu/AppData/Roaming/Xilinx/Vivado/2023.1/
+Vivado layouts directory: C:/Users/edulu/AppData/Roaming/Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/vivado.log
+Vivado journal file: 	C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/vivado.jou
+Engine tmp dir: 	C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/.Xil/Vivado-4220-LAPTOP-BVFI9EM9
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2023.1
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent1084 "C:\Users\edulu\Desktop\Clase\Entregas\SED_trabajo\Vivado-main\Project\Project.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2023.1/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2023.1
+RDI_INSTALLVERSION: 2023.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2023.1/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2023.1/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: C:/Xilinx/Vivado/2023.1/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\edulu\Desktop\Clase\Entregas\SED_trabajo\Vivado-main\Project:LAPTOP-BVFI9EM9-06-12-2023_19-11-42,49
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2023.1/data
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2023.1/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2023.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2023.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2023.1
+_RDI_BINROOT: C:\Xilinx\Vivado\2023.1\bin
+_RDI_CWD: C:\Users\edulu\Desktop\Clase\Entregas\SED_trabajo\Vivado-main\Project
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 695 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\edulu\Desktop\Clase\Entregas\SED_trabajo\Vivado-main\Project\Project.xpr. Version: Vivado v2023.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 699 MB. GUI used memory: 64 MB. Current time: 12/6/23, 7:12:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 933 MB. GUI used memory: 62 MB. Current time: 12/6/23, 7:12:43 PM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+114481kb) [00:00:44]
+// [Engine Memory]: 1,096 MB (+997239kb) [00:00:44]
+// WARNING: HEventQueue.dispatchEvent() is taking  3812 ms.
+// Tcl Message: open_project C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Project' since last save. 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'. 
+// [GUI Memory]: 128 MB (+11522kb) [00:00:46]
+// Project name: Project; location: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:58 ; elapsed = 00:00:31 . Memory (MB): peak = 1468.039 ; gain = 424.273 
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 81 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, false, false, false, false, false, true); // E - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,143 MB. GUI used memory: 69 MB. Current time: 12/6/23, 7:14:18 PM CET
+// Elapsed time: 39 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // Q
+// Elapsed time: 13 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SYNCH"); // Q
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SYNCHRNZR"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; SYNCHRNZR.vhd ; xil_defaultlib ; <Local to Project>", 0, "SYNCHRNZR.vhd", 2); // aN
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; SYNCHRNZR.vhd ; xil_defaultlib ; <Local to Project>", 0, "SYNCHRNZR.vhd", 2, false, false, false, true, false); // aN - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; SYNCHRNZR.vhd ; xil_defaultlib ; <Local to Project>", 0, "SYNCHRNZR.vhd", 2, false, false, false, true, false); // aN - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // al
+selectMenuItem(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // ao
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,162 MB. GUI used memory: 71 MB. Current time: 12/6/23, 7:15:48 PM CET
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SYNCHNXR"); // Q
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SYNCHRN"); // Q
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SYNCHRNR"); // Q
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SYNCHRNZR"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 86 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/SYNCHRNZR.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/SYNCHRNZR.vhd 
+// [Engine Memory]: 1,162 MB (+12215kb) [00:04:15]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p
+// Elapsed Time for: 'L.f': 03m:38s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:40s
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 143 MB (+8913kb) [00:04:27]
+// Elapsed Time for: 'L.f': 03m:42s
+// Elapsed Time for: 'L.f': 03m:44s
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SYNCHRNZR(Behavioral) (SYNCHRNZR.vhd)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SYNCHRNZR(Behavioral) (SYNCHRNZR.vhd)]", 2, false, false, false, false, false, true); // E - Double Click
+// [GUI Memory]: 151 MB (+1081kb) [00:04:36]
+selectCodeEditor("SYNCHRNZR.vhd", 114, 189); // ad
+typeControlKey((HResource) null, "SYNCHRNZR.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04m:02s
+// Elapsed Time for: 'L.f': 04m:04s
+// Elapsed time: 22 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "EDGET"); // Q
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "EDGETTCT"); // Q
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "EDGEDTCT"); // Q
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "EDGEDTCTR"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 24 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/EDGEDTCTR.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/EDGEDTCTR.vhd 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p
+// Elapsed Time for: 'L.f': 04m:48s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04m:50s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 04m:52s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EDGEDTCTR(Behavioral) (EDGEDTCTR.vhd)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EDGEDTCTR(Behavioral) (EDGEDTCTR.vhd)]", 2, false, false, false, false, false, true); // E - Double Click
+// Elapsed Time for: 'L.f': 04m:54s
+selectCodeEditor("EDGEDTCTR.vhd", 114, 191); // ad
+typeControlKey((HResource) null, "EDGEDTCTR.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 05m:06s
+// Elapsed Time for: 'L.f': 05m:08s
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1, false, true); // o - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+// Elapsed time: 20 seconds
+selectCodeEditor("Top.vhd", 217, 228); // ad
+selectCodeEditor("Top.vhd", 18, 340); // ad
+selectCodeEditor("Top.vhd", 35, 94); // ad
+selectCodeEditor("Top.vhd", 35, 197); // ad
+selectCodeEditor("Top.vhd", 35, 197); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 233, 182); // ad
+selectCodeEditor("Top.vhd", 103, 350); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("Top.vhd", 18, 394); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+// Elapsed time: 18 seconds
+selectCodeEditor("Top.vhd", 53, 124); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 36, 142); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 32, 136); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 126, 332); // ad
+// Elapsed time: 16 seconds
+selectCodeEditor("Top.vhd", 113, 127); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 165, 155); // ad
+selectCodeEditor("Top.vhd", 161, 186); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 193, 205); // ad
+selectCodeEditor("Top.vhd", 178, 197); // ad
+// Elapsed time: 44 seconds
+selectCodeEditor("Top.vhd", 285, 143); // ad
+selectCodeEditor("Top.vhd", 274, 143); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 146, 161); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 284, 145); // ad
+selectCodeEditor("Top.vhd", 146, 163); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true); // E - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-4-DDR-Master.xdc]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-4-DDR-Master.xdc]", 6, false, false, false, false, false, true); // E - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SYNCHRNZR.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGEDTCTR.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+selectCodeEditor("Top.vhd", 72, 166); // ad
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // R
+selectCodeEditor("Top.vhd", 173, 152); // ad
+selectCodeEditor("Top.vhd", 246, 165); // ad
+selectCodeEditor("Top.vhd", 164, 74); // ad
+selectCodeEditor("Top.vhd", 189, 97); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 144, 111); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 293, 146); // ad
+selectCodeEditor("Top.vhd", 296, 97); // ad
+// Elapsed time: 18 seconds
+selectCodeEditor("Top.vhd", 131, 142); // ad
+selectCodeEditor("Top.vhd", 202, 151); // ad
+selectCodeEditor("Top.vhd", 22, 92); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("Top.vhd", 329, 143); // ad
+selectCodeEditor("Top.vhd", 64, 96); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("Top.vhd", 247, 138); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("Top.vhd", 132, 110); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SYNCHRNZR.vhd", 2); // o
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+selectCodeEditor("Top.vhd", 154, 126); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("Top.vhd", 145, 115); // ad
+// Elapsed time: 550 seconds
+selectCodeEditor("Top.vhd", 275, 115); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("Top.vhd", 98, 27); // ad
+selectCodeEditor("Top.vhd", 135, 58); // ad
+selectCodeEditor("Top.vhd", 222, 70); // ad
+selectCodeEditor("Top.vhd", 169, 56); // ad
+selectCodeEditor("Top.vhd", 152, 58); // ad
+selectCodeEditor("Top.vhd", 160, 80); // ad
+selectCodeEditor("Top.vhd", 135, 66); // ad
+selectCodeEditor("Top.vhd", 210, 78); // ad
+selectCodeEditor("Top.vhd", 94, 25); // ad
+selectCodeEditor("Top.vhd", 94, 25); // ad
+selectCodeEditor("Top.vhd", 129, 168); // ad
+selectCodeEditor("Top.vhd", 105, 117); // ad
+selectCodeEditor("Top.vhd", 118, 138); // ad
+selectCodeEditor("Top.vhd", 156, 150); // ad
+selectCodeEditor("Top.vhd", 122, 163); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 21m:58s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 22m:00s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 22m:02s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1); // E
+// Elapsed Time for: 'L.f': 22m:04s
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true, false, false, false, true, false); // E - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// Elapsed time: 25 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FMS_Elevator"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 33 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/FMS_Elevator.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/FMS_Elevator.vhd 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p
+// Elapsed Time for: 'L.f': 23m:10s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 23m:12s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 4, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 4, false, false, false, false, false, true); // E - Double Click
+// Elapsed Time for: 'L.f': 23m:14s
+// Elapsed Time for: 'L.f': 23m:16s
+selectCodeEditor("FMS_Elevator.vhd", 207, 127); // ad
+selectCodeEditor("FMS_Elevator.vhd", 190, 172); // ad
+selectCodeEditor("FMS_Elevator.vhd", 227, 168); // ad
+selectCodeEditor("FMS_Elevator.vhd", 219, 171); // ad
+selectCodeEditor("FMS_Elevator.vhd", 34, 115); // ad
+selectCodeEditor("FMS_Elevator.vhd", 40, 147); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 23m:44s
+// Elapsed Time for: 'L.f': 23m:46s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+// Elapsed time: 25 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ao
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Dec  6 19:37:11 2023] Launched synth_1... Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel"); // JButton
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 65 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,523 MB. GUI used memory: 75 MB. Current time: 12/6/23, 7:38:38 PM CET
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,615 MB. GUI used memory: 75 MB. Current time: 12/6/23, 7:38:39 PM CET
+// [Engine Memory]: 1,624 MB (+423533kb) [00:26:31]
+// [Engine Memory]: 1,727 MB (+23210kb) [00:26:32]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1699 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1922.316 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2023.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc] Finished Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2016.840 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0,0
+// Tcl Message: open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2144.516 ; gain = 602.586 
+// 'dA' command handler elapsed time: 9 seconds
+// [GUI Memory]: 176 MB (+17455kb) [00:26:34]
+// Device view-level: 0,0
+dismissDialog("Open Synthesized Design"); // bq
+// [Engine Memory]: 1,821 MB (+7723kb) [00:26:38]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // f
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// RouteApi::initDelayMediator elapsed time: 9.1s
+// [Engine Memory]: 2,174 MB (+274335kb) [00:26:43]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+// Elapsed time: 11 seconds
+selectCodeEditor("Top.vhd", 316, 194); // ad
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o
+// Device view-level: 0,4
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+// [GUI Memory]: 187 MB (+3309kb) [00:27:34]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // G
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SYNCHRNZR.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-4-DDR-Master.xdc", 4); // o
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("FMS_Elevator.vhd", 404, 153); // ad
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGEDTCTR.vhd", 3); // o
+selectCodeEditor("EDGEDTCTR.vhd", 59, 125); // ad
+typeControlKey((HResource) null, "EDGEDTCTR.vhd", 'c'); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGEDTCTR.vhd", 3); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 104 MB. Current time: 12/6/23, 7:40:33 PM CET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 4); // o
+selectCodeEditor("FMS_Elevator.vhd", 104, 84); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 153, 106); // ad
+selectCodeEditor("FMS_Elevator.vhd", 178, 107); // ad
+selectCodeEditor("FMS_Elevator.vhd", 59, 109); // ad
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FMS_Elevator.vhd", 140, 112); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+selectCodeEditor("Top.vhd", 233, 144); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 4); // o
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 157, 125); // ad
+selectCodeEditor("FMS_Elevator.vhd", 36, 128); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 212, 135); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("FMS_Elevator.vhd", 140, 147); // ad
+selectCodeEditor("FMS_Elevator.vhd", 199, 147); // ad
+selectCodeEditor("FMS_Elevator.vhd", 204, 145); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 87, 93); // ad
+selectCodeEditor("FMS_Elevator.vhd", 148, 95); // ad
+selectCodeEditor("FMS_Elevator.vhd", 102, 80); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGEDTCTR.vhd", 3); // o
+selectCodeEditor("EDGEDTCTR.vhd", 318, 45); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGEDTCTR.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 4); // o
+selectCodeEditor("FMS_Elevator.vhd", 131, 95); // ad
+selectCodeEditor("FMS_Elevator.vhd", 155, 93); // ad
+selectCodeEditor("FMS_Elevator.vhd", 294, 159); // ad
+selectCodeEditor("FMS_Elevator.vhd", 198, 142); // ad
+selectCodeEditor("FMS_Elevator.vhd", 118, 158); // ad
+selectCodeEditor("FMS_Elevator.vhd", 195, 149); // ad
+selectCodeEditor("FMS_Elevator.vhd", 167, 157); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 14, 160); // ad
+selectCodeEditor("FMS_Elevator.vhd", 72, 160); // ad
+selectCodeEditor("FMS_Elevator.vhd", 77, 160); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("FMS_Elevator.vhd", 69, 180); // ad
+selectCodeEditor("FMS_Elevator.vhd", 212, 178); // ad
+// Elapsed time: 35 seconds
+selectCodeEditor("FMS_Elevator.vhd", 194, 185); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 199, 181); // ad
+selectCodeEditor("FMS_Elevator.vhd", 156, 198); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 116, 209); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 227, 182); // ad
+selectCodeEditor("FMS_Elevator.vhd", 275, 113); // ad
+selectCodeEditor("FMS_Elevator.vhd", 277, 109); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 183, 199); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 192, 209); // ad
+selectCodeEditor("FMS_Elevator.vhd", 296, 163); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 31m:17s
+// Elapsed Time for: 'L.f': 31m:18s
+// Elapsed time: 22 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true); // E - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+selectCodeEditor("Top.vhd", 255, 182); // ad
+selectCodeEditor("Top.vhd", 265, 199); // ad
+// Elapsed time: 27 seconds
+selectCodeEditor("Top.vhd", 265, 199); // ad
+// Elapsed time: 91 seconds
+selectCodeEditor("Top.vhd", 26, 47); // ad
+selectCodeEditor("Top.vhd", 239, 157); // ad
+selectCodeEditor("Top.vhd", 87, 90); // ad
+selectCodeEditor("Top.vhd", 3, 27); // ad
+selectCodeEditor("Top.vhd", 79, 50); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 34m:17s
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 4); // o
+// Elapsed Time for: 'L.f': 34m:19s
+selectCodeEditor("FMS_Elevator.vhd", 382, 158); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 4); // o
+selectCodeEditor("FMS_Elevator.vhd", 129, 253); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 1); // o
+selectCodeEditor("Top.vhd", 47, 148); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 61, 94); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 44, 211); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 62, 95); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 40, 215); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 202, 215); // ad
+selectCodeEditor("Top.vhd", 106, 145); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 202, 137); // ad
+selectCodeEditor("Top.vhd", 142, 248); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 121, 243); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 35m:33s
+// Elapsed Time for: 'L.f': 35m:35s
+// Elapsed time: 113 seconds
+selectCodeEditor("Top.vhd", 221, 213); // ad
+// Elapsed time: 309 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/Top.dcp to C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Dec  6 19:55:30 2023] Launched synth_1... Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,221 MB. GUI used memory: 93 MB. Current time: 12/6/23, 7:56:56 PM CET
+// Engine heap size: 2,221 MB. GUI used memory: 94 MB. Current time: 12/6/23, 7:56:56 PM CET
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,221 MB. GUI used memory: 84 MB. Current time: 12/6/23, 7:56:57 PM CET
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.625 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2023.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc] Finished Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.625 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0,0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading design"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Power]", 27, false); // f
+// Run Command: PAResourceCommand.PACommandNames_POWER_ESTIMATION
+// 'cZ' command handler elapsed time: 3 seconds
+dismissDialog("Report Power"); // a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // f
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 28 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 246, 62); // ad
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // D
+// Elapsed time: 21 seconds
+selectCodeEditor("Top.vhd", 167, 164); // ad
+selectCodeEditor("Top.vhd", 111, 76); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 298, 160); // ad
+selectCodeEditor("Top.vhd", 26, 177); // ad
+selectCodeEditor("Top.vhd", 14, 96); // ad
+selectCodeEditor("Top.vhd", 55, 182); // ad
+selectCodeEditor("Top.vhd", 360, 152); // ad
+// Elapsed time: 30 seconds
+selectCodeEditor("Top.vhd", 189, 182); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 78, 161); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+// Elapsed time: 17 seconds
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("Top.vhd", 81, 176); // ad
+selectCodeEditor("Top.vhd", 92, 200); // ad
+// Elapsed time: 43 seconds
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 195, 255); // ad
+selectCodeEditor("Top.vhd", 79, 257); // ad
+selectCodeEditor("Top.vhd", 62, 251); // ad
+selectCodeEditor("Top.vhd", 48, 128); // ad
+selectCodeEditor("Top.vhd", 40, 130); // ad
+selectCodeEditor("Top.vhd", 181, 127); // ad
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 5); // o
+selectCodeEditor("FMS_Elevator.vhd", 347, 168); // ad
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 273, 206); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 48m:25s
+// Elapsed Time for: 'L.f': 48m:27s
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 270, 151); // ad
+selectCodeEditor("Top.vhd", 334, 152); // ad
+selectCodeEditor("Top.vhd", 217, 119); // ad
+// Elapsed time: 34 seconds
+selectCodeEditor("Top.vhd", 112, 394); // ad
+// Elapsed time: 24 seconds
+selectCodeEditor("Top.vhd", 165, 127); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 152, 402); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("Top.vhd", 126, 389); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("Top.vhd", 181, 351); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 65, 384); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 366, 260); // ad
+selectCodeEditor("Top.vhd", 289, 287); // ad
+selectCodeEditor("Top.vhd", 187, 385); // ad
+selectCodeEditor("Top.vhd", 68, 197); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 159, 268); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 298, 281); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 202, 299); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 191, 317); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 186, 331); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 88, 318); // ad
+selectCodeEditor("Top.vhd", 202, 346); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 326, 368); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 170, 385); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 200, 392); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("Top.vhd", 204, 276); // ad
+selectCodeEditor("Top.vhd", 114, 261); // ad
+selectCodeEditor("Top.vhd", 222, 239); // ad
+selectCodeEditor("Top.vhd", 207, 226); // ad
+// Elapsed time: 289 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // E - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "DECODER"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/DECODER.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/DECODER.vhd 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p
+// Elapsed Time for: 'L.f': 56m:35s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:37s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DECODER(Behavioral) (DECODER.vhd)]", 4, false); // E
+// Elapsed Time for: 'L.f': 56m:39s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DECODER(Behavioral) (DECODER.vhd)]", 4, false, false, false, false, false, true); // E - Double Click
+// Elapsed Time for: 'L.f': 56m:41s
+selectCodeEditor("DECODER.vhd", 129, 430); // ad
+typeControlKey((HResource) null, "DECODER.vhd", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:47s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EDGEDTCTR.vhd", 4); // o
+// Elapsed Time for: 'L.f': 56m:49s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 191, 219); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:53s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:55s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 56m:57s
+// Elapsed Time for: 'L.f': 56m:59s
+// Elapsed time: 52 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Top.vhd]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Top.vhd]", 2, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("Top.vhd", 238, 229); // ad
+selectCodeEditor("Top.vhd", 144, 257); // ad
+selectCodeEditor("Top.vhd", 95, 280); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("Top.vhd", 64, 229); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 102, 381); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 73, 383); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("Top.vhd", 69, 145); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 99, 368); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 93, 364); // ad
+selectCodeEditor("Top.vhd", 166, 364); // ad
+selectCodeEditor("Top.vhd", 154, 399); // ad
+selectCodeEditor("Top.vhd", 131, 350); // ad
+selectCodeEditor("Top.vhd", 7, 161); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 79, 399); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 76, 177); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 97, 342); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 115, 310); // ad
+selectCodeEditor("Top.vhd", 116, 305); // ad
+selectCodeEditor("Top.vhd", 85, 281); // ad
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+// Elapsed time: 23 seconds
+selectCodeEditor("Top.vhd", 183, 317); // ad
+selectCodeEditor("Top.vhd", 325, 284); // ad
+selectCodeEditor("Top.vhd", 208, 376); // ad
+selectCodeEditor("Top.vhd", 182, 287); // ad
+selectCodeEditor("Top.vhd", 230, 179); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 236, 183); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 54, 198); // ad
+selectCodeEditor("Top.vhd", 55, 228); // ad
+selectCodeEditor("Top.vhd", 56, 265); // ad
+selectCodeEditor("Top.vhd", 123, 196); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("Top.vhd", 229, 232); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("Top.vhd", 72, 280); // ad
+selectCodeEditor("Top.vhd", 291, 282); // ad
+selectCodeEditor("Top.vhd", 368, 289); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 216, 303); // ad
+selectCodeEditor("Top.vhd", 197, 329); // ad
+selectCodeEditor("Top.vhd", 188, 324); // ad
+selectCodeEditor("Top.vhd", 179, 316); // ad
+// Elapsed time: 93 seconds
+selectCodeEditor("Top.vhd", 171, 91); // ad
+selectCodeEditor("Top.vhd", 220, 254); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 34, 263); // ad
+selectCodeEditor("Top.vhd", 133, 261); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("Top.vhd", 259, 216); // ad
+selectCodeEditor("Top.vhd", 356, 218); // ad
+selectCodeEditor("Top.vhd", 291, 278); // ad
+selectCodeEditor("Top.vhd", 127, 284); // ad
+selectCodeEditor("Top.vhd", 98, 215); // ad
+selectCodeEditor("Top.vhd", 233, 196); // ad
+selectCodeEditor("Top.vhd", 229, 209); // ad
+selectCodeEditor("Top.vhd", 241, 112); // ad
+// Elapsed time: 54 seconds
+selectCodeEditor("Top.vhd", 50, 395); // ad
+selectCodeEditor("Top.vhd", 166, 374); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // E - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // E
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // g
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // g
+selectCodeEditor("Top.vhd", 265, 126); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("Top.vhd", 325, 149); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 247, 147); // ad
+selectCodeEditor("Top.vhd", 252, 166); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:05m:38s
+// Elapsed time: 13 seconds
+selectCodeEditor("Top.vhd", 18, 402); // ad
+// Elapsed Time for: 'L.f': 01h:05m:39s
+// [GUI Memory]: 198 MB (+1484kb) [01:06:25]
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // g
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // R
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-1206] Syntax error near ')' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/Top.vhd:70]. ]", 2, false); // u.d
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\edulu\Desktop\Clase\Entregas\SED_trabajo\Vivado-main\Project\Project.srcs\sources_1\new\Top.vhd;-;;-;16;-;line;-;70;-;;-;16;-;"); // u.d
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // D
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // D
+selectCodeEditor("Top.vhd", 164, 387); // ad
+selectCodeEditor("Top.vhd", 234, 332); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:10s
+// Elapsed Time for: 'L.f': 01h:06m:12s
+// Elapsed time: 12 seconds
+selectCodeEditor("Top.vhd", 240, 162); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("Top.vhd", 342, 197); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 136, 174); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 249, 159); // ad
+selectCodeEditor("Top.vhd", 223, 234); // ad
+selectCodeEditor("Top.vhd", 149, 230); // ad
+selectCodeEditor("Top.vhd", 119, 298); // ad
+selectCodeEditor("Top.vhd", 153, 319); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:58s
+// Elapsed Time for: 'L.f': 01h:07m:00s
+selectCodeEditor("Top.vhd", 311, 327); // ad
+// Elapsed time: 17 seconds
+selectCodeEditor("Top.vhd", 213, 342); // ad
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/utils_1/imports/synth_1/Top.dcp with file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/Top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Dec  6 20:20:31 2023] Launched synth_1... Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log 
+// 'i' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 83 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // Q.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // f
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// PAPropertyPanels.initPanels (LED_Floor_OBUF[0]_inst (OBUFT)) elapsed time: 0.2s
+// Elapsed time: 18 seconds
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "11 I/O Ports"); // g
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_NETS_IN_THIS_SCHEMATIC, "7 Nets"); // g
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "5 Cells"); // g
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 737, 130); // ad
+selectCodeEditor("Top.vhd", 331, 60); // ad
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-4442] BlackBox module Inst_fmsElevator has unconnected pin EDGE[3]. ]", 1, true); // u.d - Node
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // D
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // D
+selectCodeEditor("Top.vhd", 24, 195); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 58, 199); // ad
+selectCodeEditor("Top.vhd", 58, 199); // ad
+selectCodeEditor("Top.vhd", 58, 199); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 33, 198); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 104, 262); // ad
+selectCodeEditor("Top.vhd", 112, 352); // ad
+selectCodeEditor("Top.vhd", 145, 192); // ad
+selectCodeEditor("Top.vhd", 115, 182); // ad
+selectCodeEditor("Top.vhd", 104, 129); // ad
+// Elapsed time: 36 seconds
+selectCodeEditor("Top.vhd", 206, 95); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:11m:10s
+// Elapsed Time for: 'L.f': 01h:11m:12s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/utils_1/imports/synth_1/Top.dcp with file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/Top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Dec  6 20:24:13 2023] Launched synth_1... Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 59 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // Q.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // f
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 7); // o
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // f
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "5 Cells"); // g
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "11 I/O Ports"); // g
+selectTab("PAResourceOtoP.PAViews_FIND_RESULTS", (HResource) null, "Cells in 'Schematic' (5)", 1); // d
+selectTab("PAResourceOtoP.PAViews_FIND_RESULTS", (HResource) null, "Nets in 'Schematic' (7)", 0); // d
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 473, 177); // ad
+// Elapsed time: 17 seconds
+selectCodeEditor("Top.vhd", 225, 210); // ad
+selectCodeEditor("Top.vhd", 225, 210); // ad
+// [GUI Memory]: 212 MB (+4206kb) [01:14:09]
+selectCodeEditor("Top.vhd", 223, 260); // ad
+selectCodeEditor("Top.vhd", 468, 103); // ad
+selectCodeEditor("Top.vhd", 292, 101); // ad
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "<const0> ; 6 ; 6 ; true ; Has unplaced ports or pins", 0, "<const0>", 0); // x
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "<const0> ; 6 ; 6 ; true ; Has unplaced ports or pins", 0, "<const0>", 0, false, false, false, false, true); // x - Double Click
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "<const1> ; 6 ; 6 ; true ; Has unplaced ports or pins", 1, "6", 1); // x
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "EMER_LED ; 1 ; 1 ; true ; Has unplaced ports or pins", 2, "1", 2); // x
+selectCodeEditor("Top.vhd", 873, 37); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 2,221 MB. GUI used memory: 112 MB. Current time: 12/6/23, 8:26:59 PM CET
+// Elapsed time: 31 seconds
+selectCodeEditor("Top.vhd", 463, 96); // ad
