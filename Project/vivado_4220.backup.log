@@ -3,18 +3,18 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Dec  7 18:59:20 2023
-# Process ID: 7896
-# Current directory: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7728 C:\Users\Hector\Desktop\Uni\SED\Projecto VHDL\Vivado\Vivado\Project\Project.xpr
-# Log file: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/vivado.log
-# Journal file: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project\vivado.jou
-# Running On: LAPTOP-ITU9JLQJ, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 8386 MB
+# Start of session at: Wed Dec  6 19:11:47 2023
+# Process ID: 4220
+# Current directory: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1084 C:\Users\edulu\Desktop\Clase\Entregas\SED_trabajo\Vivado-main\Project\Project.xpr
+# Log file: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/vivado.log
+# Journal file: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project\vivado.jou
+# Running On: LAPTOP-BVFI9EM9, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 8430 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.xpr}
+open_project C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.xpr
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project' since last save.
+INFO: [Project 1-313] Project file moved from 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Project' since last save.
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
@@ -113,32 +113,74 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.ip_user_files'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.ip_user_files'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:01:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1475.582 ; gain = 314.629
+open_project: Time (s): cpu = 00:00:58 ; elapsed = 00:00:31 . Memory (MB): peak = 1468.039 ; gain = 424.273
 update_compile_order -fileset sources_1
-close_project
-open_project {C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3/P3.xpr}
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3/P3.gen/sources_1'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/SYNCHRNZR.vhd w ]
+add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/SYNCHRNZR.vhd
 update_compile_order -fileset sources_1
-close_project
-open_project {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.ip_user_files'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/EDGEDTCTR.vhd w ]
+add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/EDGEDTCTR.vhd
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/FMS_Elevator.vhd w ]
+add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/FMS_Elevator.vhd
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Wed Dec  6 19:37:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1922.316 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2016.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2144.516 ; gain = 602.586
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/Top.dcp to C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs synth_1 -jobs 4
+[Wed Dec  6 19:55:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.625 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close [ open C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/DECODER.vhd w ]
+add_files C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/sources_1/new/DECODER.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/utils_1/imports/synth_1/Top.dcp with file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/Top.dcp
+launch_runs synth_1 -jobs 4
+[Wed Dec  6 20:20:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.srcs/utils_1/imports/synth_1/Top.dcp with file C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/Top.dcp
+launch_runs synth_1 -jobs 4
+[Wed Dec  6 20:24:13 2023] Launched synth_1...
+Run output will be captured here: C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project/Project.runs/synth_1/runme.log
