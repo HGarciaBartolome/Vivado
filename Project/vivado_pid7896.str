@@ -1,0 +1,755 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:05:29 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 7896
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Dec 07 19:00:01 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+Java executable: 	C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	Hector
+User home directory: C:/Users/Hector
+User working directory: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2023.1
+RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2023.1/bin
+
+Vivado preferences file: C:/Users/Hector/AppData/Roaming/Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: C:/Users/Hector/AppData/Roaming/Xilinx/Vivado/2023.1/
+Vivado layouts directory: C:/Users/Hector/AppData/Roaming/Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/vivado.log
+Vivado journal file: 	C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/vivado.jou
+Engine tmp dir: 	C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/.Xil/Vivado-7896-LAPTOP-ITU9JLQJ
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2023.1
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent7728 "C:\Users\Hector\Desktop\Uni\SED\Projecto VHDL\Vivado\Vivado\Project\Project.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2023.1/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2023.1
+RDI_INSTALLVERSION: 2023.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2023.1/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2023.1/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: C:/Xilinx/Vivado/2023.1/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\Hector\Desktop\Uni\SED\ProjectoVHDL\Vivado\Vivado\Project:LAPTOP-ITU9JLQJ-07-12-2023_18-59-16,22
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2023.1/data
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2023.1/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2023.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2023.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2023.1
+_RDI_BINROOT: C:\Xilinx\Vivado\2023.1\bin
+_RDI_CWD: C:\Users\Hector\Desktop\Uni\SED\Projecto VHDL\Vivado\Vivado\Project
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 691 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Hector\Desktop\Uni\SED\Projecto VHDL\Vivado\Vivado\Project\Project.xpr. Version: Vivado v2023.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 709 MB. GUI used memory: 65 MB. Current time: 12/7/23, 7:00:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 62 MB. Current time: 12/7/23, 7:00:17 PM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project' since last save. 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 62 MB. Current time: 12/7/23, 7:00:28 PM CET
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 114 MB (+117071kb) [00:00:51]
+// [Engine Memory]: 1,096 MB (+997284kb) [00:00:51]
+// WARNING: HEventQueue.dispatchEvent() is taking  4992 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'. 
+// [GUI Memory]: 128 MB (+8317kb) [00:00:54]
+// Project name: Project; location: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:01:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1475.582 ; gain = 314.629 
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 138 MB (+4187kb) [00:01:01]
+// Elapsed time: 45 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1); // E
+// PAPropertyPanels.initPanels (DECODER.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder(dataflow) (DECODER.vhd)]", 11, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder(dataflow) (DECODER.vhd)]", 11, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder(dataflow) (DECODER.vhd)]", 11, false); // E
+selectCodeEditor("DECODER.vhd", 205, 183); // ad
+// Elapsed time: 108 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+// [Engine Memory]: 1,153 MB (+3058kb) [00:03:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,153 MB. GUI used memory: 71 MB. Current time: 12/7/23, 7:03:22 PM CET
+// Elapsed time: 31 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_fmsElevator : FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 10, false, false, false, false, true, false); // E - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_fmsElevator : FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 10, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_fmsElevator : FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 10, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 304, 140); // ad
+// Elapsed time: 157 seconds
+selectCodeEditor("FMS_Elevator.vhd", 257, 162); // ad
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder(dataflow) (DECODER.vhd)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder(dataflow) (DECODER.vhd)]", 2, false, false, false, false, false, true); // E - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_fmsElevator : FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 10, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_fmsElevator : FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 10, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 149, 53); // ad
+selectCodeEditor("FMS_Elevator.vhd", 325, 213); // ad
+selectCodeEditor("FMS_Elevator.vhd", 241, 185); // ad
+selectCodeEditor("FMS_Elevator.vhd", 197, 200); // ad
+// Elapsed time: 146 seconds
+selectCodeEditor("FMS_Elevator.vhd", 115, 146); // ad
+// Elapsed time: 158 seconds
+selectCodeEditor("FMS_Elevator.vhd", 183, 142); // ad
+selectCodeEditor("FMS_Elevator.vhd", 294, 140); // ad
+// Elapsed time: 37 seconds
+selectCodeEditor("FMS_Elevator.vhd", 145, 145); // ad
+// [GUI Memory]: 149 MB (+4147kb) [00:13:40]
+// Elapsed time: 50 seconds
+selectCodeEditor("FMS_Elevator.vhd", 134, 179); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder(dataflow) (DECODER.vhd)]", 11, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder(dataflow) (DECODER.vhd)]", 11, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 198 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 3); // o
+// Elapsed time: 172 seconds
+selectCodeEditor("FMS_Elevator.vhd", 89, 162); // ad
+// Elapsed time: 31 seconds
+selectCodeEditor("FMS_Elevator.vhd", 42, 109); // ad
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+// Elapsed time: 44 seconds
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectCodeEditor("FMS_Elevator.vhd", 31, 184); // ad
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectCodeEditor("FMS_Elevator.vhd", 498, 149); // ad
+selectCodeEditor("FMS_Elevator.vhd", 138, 227); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // al
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3/P3.xpr"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectButton("OptionPane.button", "Yes"); // JButton
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,166 MB. GUI used memory: 71 MB. Current time: 12/7/23, 7:22:02 PM CET
+// Opening Vivado Project: C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3/P3.xpr. Version: Vivado v2023.1 
+dismissDialog("Save Project"); // W.d
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1889 ms.
+// Tcl Message: open_project {C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3/P3.xpr} 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3/P3.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'. 
+// Project name: P3; location: C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Dataflow) (top.vhd)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Dataflow) (top.vhd), Inst_fsm : fsm(behavioral) (fsm.vhd)]", 4, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Dataflow) (top.vhd), Inst_fsm : fsm(behavioral) (fsm.vhd)]", 4, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 93 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // al
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.xpr"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 71 MB. Current time: 12/7/23, 7:23:57 PM CET
+// Opening Vivado Project: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.xpr. Version: Vivado v2023.1 
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1425 ms.
+// Tcl Message: open_project {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/Project' since last save. INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project/Project.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'. 
+// Project name: Project; location: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/Project; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, FMS_Elevator.vhd]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, FMS_Elevator.vhd]", 2, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 78, 115); // ad
+// Elapsed time: 29 seconds
+selectCodeEditor("FMS_Elevator.vhd", 250, 77); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 261, 84); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 261, 84); // ad
+selectCodeEditor("FMS_Elevator.vhd", 170, 92); // ad
+selectCodeEditor("FMS_Elevator.vhd", 170, 92, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 162, 79); // ad
+selectCodeEditor("FMS_Elevator.vhd", 263, 79); // ad
+// Elapsed time: 155 seconds
+selectCodeEditor("FMS_Elevator.vhd", 162, 47); // ad
+// Elapsed time: 47 seconds
+selectCodeEditor("FMS_Elevator.vhd", 127, 41); // ad
+selectCodeEditor("FMS_Elevator.vhd", 118, 42); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("FMS_Elevator.vhd", 167, 42); // ad
+selectCodeEditor("FMS_Elevator.vhd", 203, 164); // ad
+selectCodeEditor("FMS_Elevator.vhd", 195, 164); // ad
+selectCodeEditor("FMS_Elevator.vhd", 249, 160); // ad
+selectCodeEditor("FMS_Elevator.vhd", 245, 180); // ad
+// Elapsed time: 54 seconds
+selectCodeEditor("FMS_Elevator.vhd", 141, 181); // ad
+selectCodeEditor("FMS_Elevator.vhd", 179, 110); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("FMS_Elevator.vhd", 190, 116); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("FMS_Elevator.vhd", 31, 150); // ad
+selectCodeEditor("FMS_Elevator.vhd", 76, 125); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 98, 126); // ad
+selectCodeEditor("FMS_Elevator.vhd", 166, 110); // ad
+selectCodeEditor("FMS_Elevator.vhd", 156, 136); // ad
+selectCodeEditor("FMS_Elevator.vhd", 106, 139); // ad
+selectCodeEditor("FMS_Elevator.vhd", 195, 107); // ad
+selectCodeEditor("FMS_Elevator.vhd", 120, 77); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("FMS_Elevator.vhd", 206, 106); // ad
+selectCodeEditor("FMS_Elevator.vhd", 139, 130); // ad
+// Elapsed time: 43 seconds
+selectCodeEditor("FMS_Elevator.vhd", 182, 177); // ad
+selectCodeEditor("FMS_Elevator.vhd", 206, 173); // ad
+selectCodeEditor("FMS_Elevator.vhd", 221, 182); // ad
+// Elapsed time: 22 seconds
+selectCodeEditor("FMS_Elevator.vhd", 174, 201); // ad
+selectCodeEditor("FMS_Elevator.vhd", 214, 175); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+// Elapsed time: 54 seconds
+selectCodeEditor("FMS_Elevator.vhd", 154, 197); // ad
+selectCodeEditor("FMS_Elevator.vhd", 219, 199); // ad
+selectCodeEditor("FMS_Elevator.vhd", 256, 198); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 257, 204); // ad
+selectCodeEditor("FMS_Elevator.vhd", 253, 196); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+// Elapsed time: 16 seconds
+selectCodeEditor("FMS_Elevator.vhd", 242, 165); // ad
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 34 seconds
+selectCodeEditor("FMS_Elevator.vhd", 252, 147); // ad
+selectCodeEditor("FMS_Elevator.vhd", 257, 78); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("FMS_Elevator.vhd", 266, 42); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 253, 78); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+typeControlKey(null, null, 'z');
+selectCodeEditor("FMS_Elevator.vhd", 134, 41); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 154, 87); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 255, 127); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 252, 184); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+// Elapsed time: 101 seconds
+selectCodeEditor("FMS_Elevator.vhd", 209, 187); // ad
+selectCodeEditor("FMS_Elevator.vhd", 215, 181); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 188, 191); // ad
+selectCodeEditor("FMS_Elevator.vhd", 53, 98); // ad
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 44 seconds
+selectCodeEditor("FMS_Elevator.vhd", 125, 95); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 111, 93); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("FMS_Elevator.vhd", 111, 82); // ad
+selectCodeEditor("FMS_Elevator.vhd", 169, 94); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_synchrnzr1 : SYNCHRNZR(BEHAVIORAL) (SYNCHRNZR.vhd)]", 6, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("Top.vhd", 79, 28); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 12, 41); // ad
+selectCodeEditor("Top.vhd", 297, 91); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top.vhd", 177, 88); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 12, 116); // ad
+selectCodeEditor("Top.vhd", 115, 80); // ad
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_fmsElevator : FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 12, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top(Behavioral) (Top.vhd), Inst_fmsElevator : FMS_Elevator(Behavioral) (FMS_Elevator.vhd)]", 12, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 149, 80); // ad
+// Elapsed time: 16 seconds
+selectCodeEditor("FMS_Elevator.vhd", 159, 72); // ad
+// Elapsed time: 38 seconds
+selectCodeEditor("FMS_Elevator.vhd", 213, 25); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 44, 196); // ad
+selectCodeEditor("FMS_Elevator.vhd", 24, 232); // ad
+// Elapsed time: 17 seconds
+selectCodeEditor("FMS_Elevator.vhd", 111, 233); // ad
+// Elapsed time: 48 seconds
+selectCodeEditor("FMS_Elevator.vhd", 182, 146); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("FMS_Elevator.vhd", 227, 213); // ad
+// Elapsed time: 174 seconds
+selectCodeEditor("FMS_Elevator.vhd", 346, 190); // ad
+selectCodeEditor("FMS_Elevator.vhd", 131, 165); // ad
+// Elapsed time: 26 seconds
+selectCodeEditor("FMS_Elevator.vhd", 126, 180); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("FMS_Elevator.vhd", 106, 164); // ad
+// Elapsed time: 72 seconds
+selectCodeEditor("FMS_Elevator.vhd", 371, 101); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 124, 157); // ad
+// Elapsed time: 18 seconds
+selectCodeEditor("FMS_Elevator.vhd", 115, 180); // ad
+selectCodeEditor("FMS_Elevator.vhd", 77, 183); // ad
+// Elapsed time: 27 seconds
+selectCodeEditor("FMS_Elevator.vhd", 90, 151); // ad
+selectCodeEditor("FMS_Elevator.vhd", 80, 122); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("FMS_Elevator.vhd", 192, 121); // ad
+selectCodeEditor("FMS_Elevator.vhd", 192, 121); // ad
+selectCodeEditor("FMS_Elevator.vhd", 105, 144); // ad
+selectCodeEditor("FMS_Elevator.vhd", 105, 144, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 105, 144); // ad
+// Elapsed time: 13 seconds
+selectCodeEditor("FMS_Elevator.vhd", 269, 153); // ad
+selectCodeEditor("FMS_Elevator.vhd", 273, 138); // ad
+// Elapsed time: 85 seconds
+selectCodeEditor("FMS_Elevator.vhd", 243, 161); // ad
+// Elapsed time: 57 seconds
+selectCodeEditor("FMS_Elevator.vhd", 241, 126); // ad
+// Elapsed time: 86 seconds
+selectCodeEditor("FMS_Elevator.vhd", 100, 28); // ad
+selectCodeEditor("FMS_Elevator.vhd", 100, 28, false, false, false, false, true); // ad - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("FMS_Elevator.vhd", 167, 32); // ad
+// Elapsed time: 25 seconds
+selectCodeEditor("FMS_Elevator.vhd", 120, 29); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,208 MB. GUI used memory: 75 MB. Current time: 12/7/23, 7:53:57 PM CET
+// Elapsed time: 10 seconds
+selectCodeEditor("FMS_Elevator.vhd", 122, 177); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 285, 160); // ad
+selectCodeEditor("FMS_Elevator.vhd", 126, 129); // ad
+selectCodeEditor("FMS_Elevator.vhd", 172, 147); // ad
+selectCodeEditor("FMS_Elevator.vhd", 132, 148); // ad
+// Elapsed time: 34 seconds
+selectCodeEditor("FMS_Elevator.vhd", 110, 78); // ad
+selectCodeEditor("FMS_Elevator.vhd", 80, 79); // ad
+// Elapsed time: 17 seconds
+selectCodeEditor("FMS_Elevator.vhd", 216, 175); // ad
+selectCodeEditor("FMS_Elevator.vhd", 216, 175, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 216, 175); // ad
+selectCodeEditor("FMS_Elevator.vhd", 218, 176); // ad
+selectCodeEditor("FMS_Elevator.vhd", 48, 112); // ad
+// Elapsed time: 65 seconds
+selectCodeEditor("FMS_Elevator.vhd", 88, 95); // ad
+// Elapsed time: 51 seconds
+selectCodeEditor("FMS_Elevator.vhd", 108, 165); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 53, 95); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+// Elapsed time: 21 seconds
+selectCodeEditor("FMS_Elevator.vhd", 326, 114); // ad
+selectCodeEditor("FMS_Elevator.vhd", 54, 110); // ad
+selectCodeEditor("FMS_Elevator.vhd", 54, 110); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 322, 116); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+// Elapsed time: 44 seconds
+selectCodeEditor("FMS_Elevator.vhd", 338, 90); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("FMS_Elevator.vhd", 125, 6); // ad
+selectCodeEditor("FMS_Elevator.vhd", 88, 161); // ad
+// Elapsed time: 29 seconds
+selectCodeEditor("FMS_Elevator.vhd", 126, 160); // ad
+selectCodeEditor("FMS_Elevator.vhd", 204, 163); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 326, 181); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 344, 212); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+// Elapsed time: 13 seconds
+selectCodeEditor("FMS_Elevator.vhd", 227, 96); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 133, 79); // ad
+// Elapsed time: 31 seconds
+selectCodeEditor("FMS_Elevator.vhd", 180, 158); // ad
+selectCodeEditor("FMS_Elevator.vhd", 147, 89); // ad
+selectCodeEditor("FMS_Elevator.vhd", 214, 84); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("FMS_Elevator.vhd", 74, 150); // ad
+selectCodeEditor("FMS_Elevator.vhd", 70, 167); // ad
+// Elapsed time: 89 seconds
+selectCodeEditor("FMS_Elevator.vhd", 188, 67); // ad
+// Elapsed time: 87 seconds
+selectCodeEditor("FMS_Elevator.vhd", 47, 96); // ad
+// Elapsed time: 36 seconds
+selectCodeEditor("FMS_Elevator.vhd", 75, 78); // ad
+// Elapsed time: 34 seconds
+selectCodeEditor("FMS_Elevator.vhd", 57, 78); // ad
+selectCodeEditor("FMS_Elevator.vhd", 21, 163); // ad
+selectCodeEditor("FMS_Elevator.vhd", 45, 172); // ad
+selectCodeEditor("FMS_Elevator.vhd", 54, 179); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 102, 130); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 215, 162); // ad
+selectCodeEditor("FMS_Elevator.vhd", 77, 145); // ad
+// Elapsed time: 89 seconds
+selectCodeEditor("FMS_Elevator.vhd", 189, 91); // ad
+selectCodeEditor("FMS_Elevator.vhd", 180, 153); // ad
+selectCodeEditor("FMS_Elevator.vhd", 195, 140); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 225, 45); // ad
+selectCodeEditor("FMS_Elevator.vhd", 247, 43); // ad
+selectCodeEditor("FMS_Elevator.vhd", 231, 44); // ad
+selectCodeEditor("FMS_Elevator.vhd", 349, 64); // ad
+// Elapsed time: 47 seconds
+selectCodeEditor("FMS_Elevator.vhd", 185, 136); // ad
+selectCodeEditor("FMS_Elevator.vhd", 60, 230); // ad
+selectCodeEditor("FMS_Elevator.vhd", 95, 230); // ad
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+selectCodeEditor("Top.vhd", 84, 162); // ad
+selectCodeEditor("Top.vhd", 182, 163); // ad
+// Elapsed time: 40 seconds
+selectCodeEditor("Top.vhd", 196, 181); // ad
+// Elapsed time: 48 seconds
+selectCodeEditor("Top.vhd", 39, 180); // ad
+selectCodeEditor("Top.vhd", 75, 200); // ad
+// Elapsed time: 36 seconds
+selectCodeEditor("Top.vhd", 447, 187); // ad
+selectCodeEditor("Top.vhd", 434, 177); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("Top.vhd", 372, 211); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("Top.vhd", 358, 203); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 28, 180); // ad
+selectCodeEditor("Top.vhd", 48, 179); // ad
+selectCodeEditor("Top.vhd", 54, 179); // ad
+selectCodeEditor("Top.vhd", 44, 193); // ad
+selectCodeEditor("Top.vhd", 5, 178); // ad
+typeControlKey((HResource) null, "Top.vhd", 'c'); // ad
+selectCodeEditor("Top.vhd", 8, 112); // ad
+typeControlKey((HResource) null, "Top.vhd", 'v'); // ad
+selectCodeEditor("Top.vhd", 179, 131); // ad
+selectCodeEditor("Top.vhd", 33, 90); // ad
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 1); // o
+selectCodeEditor("FMS_Elevator.vhd", 213, 199); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 0, 145); // ad
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.vhd", 2); // o
+// Elapsed time: 19 seconds
+selectCodeEditor("Top.vhd", 77, 330); // ad
+selectCodeEditor("Top.vhd", 64, 333); // ad
+// Elapsed time: 39 seconds
+selectCodeEditor("Top.vhd", 183, 350); // ad
+selectCodeEditor("Top.vhd", 43, 402); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("Top.vhd", 197, 424); // ad
+selectCodeEditor("Top.vhd", 4, 411); // ad
+selectCodeEditor("Top.vhd", 4, 411, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("Top.vhd", 238, 325); // ad
+selectCodeEditor("Top.vhd", 161, 409); // ad
+selectCodeEditor("Top.vhd", 157, 400); // ad
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FMS_Elevator.vhd", 1); // o
+// Elapsed Time for: 'L.f': 52m:01s
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 52m:03s
+// Elapsed Time for: 'L.f': 52m:05s
+// Elapsed time: 11 seconds
+selectCodeEditor("FMS_Elevator.vhd", 214, 363); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 160, 350); // ad
+selectCodeEditor("FMS_Elevator.vhd", 176, 359); // ad
+selectCodeEditor("FMS_Elevator.vhd", 170, 343); // ad
+selectCodeEditor("FMS_Elevator.vhd", 175, 368); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("FMS_Elevator.vhd", 136, 388); // ad
+selectCodeEditor("FMS_Elevator.vhd", 136, 388); // ad
+selectCodeEditor("FMS_Elevator.vhd", 192, 366); // ad
+selectCodeEditor("FMS_Elevator.vhd", 189, 368); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 102, 380); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 238, 447); // ad
+selectCodeEditor("FMS_Elevator.vhd", 157, 381); // ad
+// Elapsed time: 18 seconds
+selectCodeEditor("FMS_Elevator.vhd", 161, 353); // ad
+selectCodeEditor("FMS_Elevator.vhd", 172, 316); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("FMS_Elevator.vhd", 196, 378); // ad
+// Elapsed time: 64 seconds
+selectCodeEditor("FMS_Elevator.vhd", 196, 386); // ad
+selectCodeEditor("FMS_Elevator.vhd", 241, 378); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 212, 272); // ad
+selectCodeEditor("FMS_Elevator.vhd", 199, 261); // ad
+// Elapsed time: 58 seconds
+selectCodeEditor("FMS_Elevator.vhd", 175, 188); // ad
+// Elapsed time: 29 seconds
+selectCodeEditor("FMS_Elevator.vhd", 176, 380); // ad
+selectCodeEditor("FMS_Elevator.vhd", 176, 380, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 185, 388); // ad
+selectCodeEditor("FMS_Elevator.vhd", 176, 381); // ad
+selectCodeEditor("FMS_Elevator.vhd", 290, 375); // ad
+selectCodeEditor("FMS_Elevator.vhd", 172, 391); // ad
+selectCodeEditor("FMS_Elevator.vhd", 172, 370); // ad
+selectCodeEditor("FMS_Elevator.vhd", 135, 384); // ad
+// Elapsed time: 22 seconds
+selectCodeEditor("FMS_Elevator.vhd", 173, 333); // ad
+selectCodeEditor("FMS_Elevator.vhd", 173, 333); // ad
+selectCodeEditor("FMS_Elevator.vhd", 163, 329); // ad
+// Elapsed time: 43 seconds
+selectCodeEditor("FMS_Elevator.vhd", 191, 309); // ad
+selectCodeEditor("FMS_Elevator.vhd", 164, 341); // ad
+selectCodeEditor("FMS_Elevator.vhd", 169, 329); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("FMS_Elevator.vhd", 198, 334); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("FMS_Elevator.vhd", 115, 408); // ad
+selectCodeEditor("FMS_Elevator.vhd", 116, 406); // ad
+// Elapsed time: 52 seconds
+selectCodeEditor("FMS_Elevator.vhd", 153, 342); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,208 MB. GUI used memory: 57 MB. Current time: 12/7/23, 8:23:58 PM CET
+// Elapsed time: 16 seconds
+selectCodeEditor("FMS_Elevator.vhd", 153, 341); // ad
+selectCodeEditor("FMS_Elevator.vhd", 148, 324); // ad
+selectCodeEditor("FMS_Elevator.vhd", 213, 212); // ad
+selectCodeEditor("FMS_Elevator.vhd", 115, 323); // ad
+// Elapsed time: 21 seconds
+selectCodeEditor("FMS_Elevator.vhd", 265, 291); // ad
+selectCodeEditor("FMS_Elevator.vhd", 273, 280); // ad
+selectCodeEditor("FMS_Elevator.vhd", 273, 280, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("FMS_Elevator.vhd", 265, 279); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 114, 310); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 121, 353); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 121, 377, false, true, false, false, false); // ad - Control Key
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+// Elapsed time: 21 seconds
+selectCodeEditor("FMS_Elevator.vhd", 139, 427); // ad
+// Elapsed time: 37 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:01m:53s
+// Elapsed Time for: 'L.f': 01h:01m:55s
+selectCodeEditor("FMS_Elevator.vhd", 212, 281); // ad
+// Elapsed time: 34 seconds
+selectCodeEditor("FMS_Elevator.vhd", 62, 429); // ad
+// Elapsed time: 16 seconds
+selectCodeEditor("FMS_Elevator.vhd", 62, 429); // ad
+// Elapsed time: 26 seconds
+selectCodeEditor("FMS_Elevator.vhd", 97, 437); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("FMS_Elevator.vhd", 55, 390); // ad
+selectCodeEditor("FMS_Elevator.vhd", 83, 390); // ad
+selectCodeEditor("FMS_Elevator.vhd", 70, 426); // ad
+selectCodeEditor("FMS_Elevator.vhd", 72, 415); // ad
+// Elapsed time: 23 seconds
+selectCodeEditor("FMS_Elevator.vhd", 1, 379); // ad
+selectCodeEditor("FMS_Elevator.vhd", 119, 365); // ad
+typeControlKey(null, null, 'z');
+selectCodeEditor("FMS_Elevator.vhd", 204, 367); // ad
+selectCodeEditor("FMS_Elevator.vhd", 204, 367); // ad
+selectCodeEditor("FMS_Elevator.vhd", 180, 337); // ad
+selectCodeEditor("FMS_Elevator.vhd", 180, 337); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'c'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 149, 406); // ad
+typeControlKey((HResource) null, "FMS_Elevator.vhd", 'v'); // ad
+selectCodeEditor("FMS_Elevator.vhd", 154, 414); // ad
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:04m:29s
+// Elapsed Time for: 'L.f': 01h:04m:31s
+// Elapsed time: 19 seconds
+selectCodeEditor("FMS_Elevator.vhd", 895, 27); // ad

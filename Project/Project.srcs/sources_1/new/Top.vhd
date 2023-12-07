@@ -3,14 +3,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Top is
  PORT ( 
+ RESET: in std_logic;
  Button: in std_logic_vector(3 DOWNTO 0);
  CLK : in std_logic;
  EMER : in std_logic;
  LED_Floor : OUT std_logic_vector(3 DOWNTO 0);
- Motor_Up: OUT std_logic;
- Motor_Down : OUT std_logic; 
- Door_Close : OUT std_logic; 
- Door_open : OUT std_logic; 
+ MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
+ DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
  EMER_LED : OUT std_logic
 
  );
@@ -35,12 +34,11 @@ COMPONENT EDGEDTCTR
 END COMPONENT;
 COMPONENT FMS_Elevator
  port (
+ RESET: in std_logic;
  CLK : in std_logic;
  EDGE : in std_logic_vector(3 DOWNTO 0);
- DOOR_CLOSE : out std_logic;
- DOOR_OPEN : out std_logic;
- MOTOR_UP : out std_logic;
- MOTOR_DOWN : out std_logic;
+ MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
+ DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
  LED_Floor: out std_logic_vector(3 DOWNTO 0);
  LED_EMER: out std_logic
  );
@@ -89,12 +87,11 @@ Inst_synchrnzr3:  SYNCHRNZR port MAP(
  EDGE=>EDGES(3)
 );
 Inst_fmsElevator: FMS_Elevator PORT MAP(
+ RESET => RESET,
  CLK => CLK,
  EDGE => EDGES,
- DOOR_CLOSE =>Door_Close,
- DOOR_OPEN =>Door_Open,
- MOTOR_UP=>Motor_Up,
- MOTOR_DOWN=>Motor_Down,
+ DOORS =>DOORS,
+ MOTORS => MOTORS,
  LED_Floor => LED_Floor,
  LED_EMER => EMER_LED
 );
