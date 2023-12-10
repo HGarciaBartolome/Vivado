@@ -19,6 +19,7 @@ architecture Behavioral of FMS_Elevator is
     signal pisoobjetivo: integer := 0;
     signal trabajando: std_logic:='0';
     signal state: STATES := stdby;
+    signal tiempoviaje : integer :=0;
     
 begin
 state_register:process(CLK,RESET)
@@ -80,12 +81,46 @@ output_decod: process(pisoactual,state)
                 LED_floor <= "1000";
         end case;
     end process;
-error_detect: process
+    
+error_detect: process(pisoactual,pisoobjetivo,state) --comprobación de error en la situación actual del ascensor, si baja más de lo que debería o si sube más de lo debido
     begin
+        if(pisoactual<pisoobjetivo) then
+            if(state=down) then
+            state<=error;
+            LED_EMER<='1';
+            MOTORS <= "00";
+            end if;
+        elsif(pisoactual>pisoobjetivo) then
+            if(state=up) then
+            state<=error;
+            LED_EMER<='1';
+            MOTORS <= "00";
+            end if;
+        end if;
     end process;
 
-cambio_piso: process
+cambio_piso: process(pisoactual,pisoobjetivo,CLK)--se mueve al piso indicado, esperando x tiempo simulando el movimiento del ascensor
     begin
+        if(pisoactual<pisoobjetivo) then
+        state<=up;
+            while (tiempoviaje<10) loop--tras 10 ciclos de reloj, cambia el valor de piso actual
+             if rising_edge(CLK) then
+             tiempoviaje<=tiempoviaje + 1;
+             end if;
+             end loop;
+            pisoactual<=pisoactual+1;--tras terminar la espera, sube un piso
+        
+        elsif(pisoactual>pisoobjetivo) then
+        state<=down;
+         while (tiempoviaje<10) loop--tras 10 ciclos de reloj, cambia el valor de piso actual
+             if rising_edge(CLK) then
+             tiempoviaje<=tiempoviaje +1;
+             end if;
+             end loop;
+            pisoactual<=pisoactual-1;--tras terminar la espera, sube un piso
+        elsif(pisoactual=pisoobjetivo) then
+        state<=stdby;
+            DOORS<='1';--en caso de estar ya en el piso, lo unico que puede hacer es abrir la puerta
+        end if;
     end process;
-
 end Behavioral;
