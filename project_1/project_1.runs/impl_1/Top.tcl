@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.runs/impl_1/Top.tcl"
+  variable script "C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.runs/impl_1/Top.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,15 +130,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.xpr [current_project]
-  set_property ip_output_repo C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.runs/synth_1/Top.dcp
+  add_files -quiet {{C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.runs/synth_1/Top.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc
+  read_xdc {{C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -295,4 +295,34 @@ OPTRACE "route_design write_checkpoint" END { }
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  catch { write_mem_info -force -no_partial_mmi Top.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force Top.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force Top}
+  catch {file copy -force Top.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

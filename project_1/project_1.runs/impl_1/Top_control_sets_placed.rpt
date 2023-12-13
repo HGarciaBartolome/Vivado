@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Wed Dec 13 13:15:44 2023
-| Host         : LAPTOP-BVFI9EM9 running 64-bit major release  (build 9200)
+| Date         : Wed Dec 13 15:41:32 2023
+| Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
 | Device       : xc7a100t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     6 |
-|    Minimum number of control sets                        |     6 |
+| Total control sets                                       |     5 |
+|    Minimum number of control sets                        |     5 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    29 |
+| Unused register locations in slices containing registers |    22 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,8 +39,8 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     6 |
-| >= 0 to < 4        |     3 |
+| Total control sets |     5 |
+| >= 0 to < 4        |     2 |
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              59 |           24 |
+| No           | No                    | No                     |              58 |           21 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -74,10 +74,9 @@ Table of Contents
 |                Clock Signal                | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------------------------------+---------------+------------------+------------------+----------------+--------------+
 |  Inst_fmsElevator/DOORS_reg/G0             |               |                  |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/LED_EMER_reg_i_2_n_1     |               |                  |                1 |              1 |         1.00 |
 |  Inst_edgedtctr3/E[0]                      |               |                  |                1 |              3 |         3.00 |
-|  Inst_fmsElevator/LED_Floor_reg[3]_i_2_n_1 |               |                  |                3 |              4 |         1.33 |
-|  CLK_IBUF_BUFG                             |               |                  |                9 |             22 |         2.44 |
+|  Inst_fmsElevator/LED_Floor_reg[3]_i_2_n_1 |               |                  |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG                             |               |                  |                8 |             22 |         2.75 |
 |  n_0_10_BUFG                               |               |                  |                9 |             32 |         3.56 |
 +--------------------------------------------+---------------+------------------+------------------+----------------+--------------+
 

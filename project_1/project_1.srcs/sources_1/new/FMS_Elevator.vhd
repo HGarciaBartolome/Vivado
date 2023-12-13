@@ -20,7 +20,8 @@ architecture Behavioral of FMS_Elevator is
     signal trabajando: std_logic:='0';
     signal state: STATES := stdby;
     signal tiempoviaje : integer :=0;
-    
+    signal flagerror: std_logic :='0';
+    signal loopcount : integer :=0;
 begin
 state_register:process(CLK,RESET)
     begin
@@ -33,8 +34,10 @@ state_register:process(CLK,RESET)
                 state <= Up;
             elsif (pisoactual > pisoobjetivo) then
                 state <= Down;
-            else
+            elsif flagerror ='1' then
                 state <= Error;
+            else 
+                state<= Error;
             end if;
         end if;
     end process;
@@ -75,6 +78,8 @@ output_decod: process(pisoactual,state)
         elsif (state = Error) then
             MOTORS(1) <= '0';
             MOTORS(0) <= '0';
+            DOORS<= '0';
+            LED_EMER<='1';
         end if;
         case pisoactual is
             when 0 =>
@@ -91,30 +96,34 @@ output_decod: process(pisoactual,state)
     
 error_detect: process(pisoactual,pisoobjetivo,state) --comprobación de error en la situación actual del ascensor, si baja más de lo que debería o si sube más de lo debido
     begin
-        if(pisoactual<pisoobjetivo) then
-            if(state=down) then
-           -- state<=Error;
-            LED_EMER<='1';
-            end if;
-        elsif(pisoactual>pisoobjetivo) then
-            if(state=up) then
-           -- state<=Error;
-            LED_EMER<='1';
-            end if;
+        if(pisoactual<pisoobjetivo) and (state=down) then
+            flagerror <='1';
+        elsif(pisoactual>pisoobjetivo)and(state=up) then
+            flagerror <='1';
         end if;
     end process;
 
-cambio_piso: process(pisoactual,pisoobjetivo,CLK)--se mueve al piso indicado, esperando x tiempo simulando el movimiento del ascensor
+cambio_piso: process--se mueve al piso indicado, esperando x tiempo simulando el movimiento del ascensor
     begin
         if(state = Up) then
-
-            pisoactual<=pisoactual+1;--tras terminar la espera, sube un piso
+            loopcount<=0;
+           for loopcount in 1 to 10 loop
+                wait until rising_edge(CLK);
+            end loop;
+            pisoactual<= pisoactual+1;--tras terminar la espera, sube un piso
         
         elsif(state = Down) then
-
-            pisoactual<=pisoactual-1;--tras terminar la espera, sube un piso
+            loopcount<=0;
+             for loopcount in 1 to 10 loop
+                wait until rising_edge(CLK);
+            end loop;
+            pisoactual<= pisoactual-1;--tras terminar la espera, sube un piso
             
         elsif(state = stdby) then
+            loopcount<=0;
+             for loopcount in 1 to 20 loop
+                wait until rising_edge(CLK);
+            end loop;
         end if;
     end process;
 end Behavioral;

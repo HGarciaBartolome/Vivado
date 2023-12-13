@@ -14,9 +14,9 @@ ECHO est  desactivado.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source Top.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 463.094 ; gain = 197.898
-Command: read_checkpoint -auto_incremental -incremental C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/utils_1/imports/synth_1/Top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 462.461 ; gain = 199.891
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/utils_1/imports/synth_1/Top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Top -part xc7a100tcsg324-1
 Starting synth_design
@@ -27,84 +27,83 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2704
+INFO: [Synth 8-7075] Helper process launched with PID 6928
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1295.270 ; gain = 412.363
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.367 ; gain = 410.941
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:18]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr0' of component 'SYNCHRNZR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:10]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr0' of component 'EDGEDTCTR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:54]
-INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:10]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr1' of component 'SYNCHRNZR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:59]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr1' of component 'EDGEDTCTR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:64]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr2' of component 'SYNCHRNZR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:69]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr2' of component 'EDGEDTCTR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:74]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr3' of component 'SYNCHRNZR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:79]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr3' of component 'EDGEDTCTR' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:84]
-INFO: [Synth 8-3491] module 'FMS_Elevator' declared at 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:4' bound to instance 'Inst_fmsElevator' of component 'FMS_Elevator' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'FMS_Elevator' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:16]
-WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:107]
-INFO: [Synth 8-256] done synthesizing module 'FMS_Elevator' (0#1) [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'Top' (0#1) [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/Top.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:18]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr0' of component 'SYNCHRNZR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr0' of component 'EDGEDTCTR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr1' of component 'SYNCHRNZR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:59]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr1' of component 'EDGEDTCTR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:64]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr2' of component 'SYNCHRNZR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:69]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr2' of component 'EDGEDTCTR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:74]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr3' of component 'SYNCHRNZR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:79]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr3' of component 'EDGEDTCTR' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:84]
+INFO: [Synth 8-3491] module 'FMS_Elevator' declared at 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:4' bound to instance 'Inst_fmsElevator' of component 'FMS_Elevator' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'FMS_Elevator' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'FMS_Elevator' (0#1) [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Top' (0#1) [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:18]
 WARNING: [Synth 8-7129] Port EMER in module Top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1385.633 ; gain = 502.727
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.285 ; gain = 501.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1385.633 ; gain = 502.727
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.285 ; gain = 501.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1385.633 ; gain = 502.727
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.285 ; gain = 501.859
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1385.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1386.285 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
-Finished Parsing XDC File [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Parsing XDC File [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1483.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1478.785 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1483.676 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1478.785 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'MOTORS_reg' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:64]
-WARNING: [Synth 8-327] inferring latch for variable 'DOORS_reg' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:66]
-WARNING: [Synth 8-327] inferring latch for variable 'LED_Floor_reg' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:81]
-WARNING: [Synth 8-327] inferring latch for variable 'LED_EMER_reg' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:97]
-WARNING: [Synth 8-327] inferring latch for variable 'pisoobjetivo_reg' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:30]
-WARNING: [Synth 8-327] inferring latch for variable 'pisoactual_reg' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:111]
-WARNING: [Synth 8-327] inferring latch for variable 'trabajando_reg' [C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:43]
+WARNING: [Synth 8-327] inferring latch for variable 'MOTORS_reg' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'DOORS_reg' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_Floor_reg' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:86]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_EMER_reg' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 'pisoobjetivo_reg' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'pisoactual_reg' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:113]
+WARNING: [Synth 8-327] inferring latch for variable 'trabajando_reg' [C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -122,10 +121,10 @@ Detailed RTL Component Info :
 	   4 Input    4 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 12    
-	   4 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 2     
 	   5 Input    1 Bit        Muxes := 2     
-	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -145,27 +144,28 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port EMER in module Top is either unconnected or has no load
 WARNING: [Synth 8-3332] Sequential element (Inst_fmsElevator/MOTORS_reg[1]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (Inst_fmsElevator/MOTORS_reg[0]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Inst_fmsElevator/pisoobjetivo_reg[31]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Inst_fmsElevator/LED_EMER_reg) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Inst_fmsElevator/pisoobjetivo_reg[2]) is unused and will be removed from module Top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -183,37 +183,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -251,39 +251,39 @@ Report Cell Usage:
 |3     |LUT1   |     2|
 |4     |LUT2   |    87|
 |5     |LUT3   |    14|
-|6     |LUT4   |     9|
+|6     |LUT4   |     8|
 |7     |LUT5   |     4|
 |8     |LUT6   |     5|
 |9     |SRL16E |     4|
 |10    |FDRE   |    18|
-|11    |LD     |    40|
+|11    |LD     |    39|
 |12    |LDCP   |     1|
 |13    |IBUF   |     6|
 |14    |OBUF   |     8|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1483.676 ; gain = 502.727
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.676 ; gain = 600.770
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 1478.785 ; gain = 501.859
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1478.785 ; gain = 594.359
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1483.676 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1478.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1483.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1478.785 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 41 instances were transformed.
-  LD => LDCE: 40 instances
+  A total of 40 instances were transformed.
+  LD => LDCE: 39 instances
   LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
 
-Synth Design complete | Checksum: ef74b4e7
+Synth Design complete | Checksum: 5c3dce9a
 INFO: [Common 17-83] Releasing license: Synthesis
 38 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1483.676 ; gain = 996.676
-INFO: [Common 17-1381] The checkpoint 'C:/Users/edulu/Desktop/Clase/Entregas/SED_trabajo/Vivado-main/project_1/project_1.runs/synth_1/Top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1478.785 ; gain = 991.434
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 13:14:59 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 15:40:25 2023...
