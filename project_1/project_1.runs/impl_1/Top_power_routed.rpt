@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Wed Dec 13 15:42:20 2023
+| Date             : Wed Dec 13 16:53:21 2023
 | Host             : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
 | Design           : Top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.370        |
+| Total On-Chip Power (W)  | 6.700        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.259        |
-| Device Static (W)        | 0.111        |
+| Dynamic (W)              | 6.561        |
+| Device Static (W)        | 0.139        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 69.6         |
-| Junction Temperature (C) | 40.4         |
+| Max Ambient (C)          | 54.4         |
+| Junction Temperature (C) | 55.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |     0.697 |      228 |       --- |             --- |
-|   LUT as Logic          |     0.604 |       98 |     63400 |            0.15 |
-|   CARRY4                |     0.069 |       19 |     15850 |            0.12 |
-|   BUFG                  |     0.012 |        2 |        32 |            6.25 |
+| Slice Logic             |     0.758 |      232 |       --- |             --- |
+|   LUT as Logic          |     0.649 |      100 |     63400 |            0.16 |
+|   CARRY4                |     0.070 |       19 |     15850 |            0.12 |
+|   BUFG                  |     0.026 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |     0.008 |        4 |     19000 |            0.02 |
-|   Register              |     0.005 |       58 |    126800 |            0.05 |
+|   Register              |     0.006 |       59 |    126800 |            0.05 |
 |   Others                |     0.000 |       23 |       --- |             --- |
-| Signals                 |     0.465 |      110 |       --- |             --- |
-| I/O                     |     2.096 |       14 |       210 |            6.67 |
-| Static Power            |     0.111 |          |           |                 |
-| Total                   |     3.370 |          |           |                 |
+| Signals                 |     0.563 |      112 |       --- |             --- |
+| I/O                     |     5.240 |       14 |       210 |            6.67 |
+| Static Power            |     0.139 |          |           |                 |
+| Total                   |     6.700 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,16 +72,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.213 |       1.186 |      0.027 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.095 |       0.076 |      0.019 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.591 |       0.587 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.395 |       1.345 |      0.049 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.213 |       0.191 |      0.022 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     1.480 |       1.476 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -139,17 +139,17 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| Top                |     3.259 |
-|   Inst_edgedtctr0  |     0.008 |
-|   Inst_edgedtctr1  |     0.010 |
-|   Inst_edgedtctr2  |     0.011 |
-|   Inst_edgedtctr3  |     0.025 |
-|   Inst_fmsElevator |     1.052 |
-|     DOORS_reg      |     0.005 |
-|   Inst_synchrnzr0  |     0.004 |
-|   Inst_synchrnzr1  |     0.005 |
+| Top                |     6.561 |
+|   Inst_edgedtctr0  |     0.007 |
+|   Inst_edgedtctr1  |     0.020 |
+|   Inst_edgedtctr2  |     0.016 |
+|   Inst_edgedtctr3  |     0.008 |
+|   Inst_fmsElevator |     1.192 |
+|     DOORS_reg      |     0.021 |
+|   Inst_synchrnzr0  |     0.003 |
+|   Inst_synchrnzr1  |     0.004 |
 |   Inst_synchrnzr2  |     0.003 |
-|   Inst_synchrnzr3  |     0.003 |
+|   Inst_synchrnzr3  |     0.004 |
 +--------------------+-----------+
 
 

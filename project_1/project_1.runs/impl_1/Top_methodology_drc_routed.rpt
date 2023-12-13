@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Wed Dec 13 15:42:19 2023
+| Date         : Wed Dec 13 16:53:20 2023
 | Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
 | Design       : Top
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 65
+             Violations found: 66
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 22         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 23         |
 | LUTAR-1   | Warning          | LUT drives async reset alert   | 2          |
 | TIMING-20 | Warning          | Non-clocked latch              | 40         |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
@@ -97,50 +97,55 @@ Related violations: <none>
 
 TIMING-17#13 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/state_reg[0]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/flagfin_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/state_reg[1]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr0/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_fmsElevator/state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr0/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Inst_synchrnzr0/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr1/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_synchrnzr0/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr1/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Inst_synchrnzr1/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr2/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_synchrnzr1/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr2/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Inst_synchrnzr2/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr3/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_synchrnzr2/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr3/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
 Non-clocked sequential cell  
 The clock pin Inst_synchrnzr3/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>

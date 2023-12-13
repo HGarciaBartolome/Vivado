@@ -15,19 +15,15 @@ end FMS_Elevator;
 
 architecture Behavioral of FMS_Elevator is
     type STATES is (stdby, Up, Down, Error);
-    signal pisoactual : integer :=0;
-    signal pisoobjetivo: integer := 0;
+    signal pisoactual , pisoobjetivo : integer :=0;
     signal trabajando: std_logic:='0';
     signal state: STATES := stdby;
-    signal tiempoviaje : integer :=0;
-    signal flagerror: std_logic :='0';
-    signal loopcount : integer :=0;
+    signal tiempoviaje , loopcount : integer :=0;
+    signal flagerror , flagfin: std_logic :='0';
 begin
 state_register:process(CLK,RESET)
     begin
-        if(RESET = '1') then
-            --trabajando <='0';
-        elsif rising_edge(CLK) then
+        if rising_edge(CLK) then
             if(pisoactual = pisoobjetivo) then
                 state <= stdby;
             elsif (pisoactual < pisoobjetivo) then
@@ -41,9 +37,11 @@ state_register:process(CLK,RESET)
             end if;
         end if;
     end process;
-next_state_decoder: process(EDGE,trabajando)
+next_state_decoder: process(EDGE,RESET,flagfin)
     begin
-        if(trabajando = '0') then
+        if(RESET = '1') then
+           trabajando <='0';
+        elsif(trabajando = '0') then
             case EDGE is
                 when "0001" =>
                    pisoobjetivo<= 0;
@@ -59,6 +57,8 @@ next_state_decoder: process(EDGE,trabajando)
                    trabajando <= '1';
                 when others =>
             end case;
+        elsif flagfin ='1' then
+          trabajando <= '0';
         end if;
     end process;
 output_decod: process(pisoactual,state)
@@ -124,6 +124,9 @@ cambio_piso: process--se mueve al piso indicado, esperando x tiempo simulando el
              for loopcount in 1 to 20 loop
                 wait until rising_edge(CLK);
             end loop;
+          flagfin <= '1';
+          wait until falling_edge(trabajando);
+          flagfin <= '0';
         end if;
     end process;
 end Behavioral;
