@@ -107,21 +107,21 @@ cambio_piso: process--se mueve al piso indicado, esperando x tiempo simulando el
     begin
         if(state = Up) then
             loopcount<=0;
-           for loopcount in 1 to 10 loop
+           for loopcount in 1 to 3 loop
                 wait until rising_edge(CLK);
             end loop;
             pisoactual<= pisoactual+1;--tras terminar la espera, sube un piso
         
         elsif(state = Down) then
             loopcount<=0;
-             for loopcount in 1 to 10 loop
+             for loopcount in 1 to 3 loop
                 wait until rising_edge(CLK);
             end loop;
             pisoactual<= pisoactual-1;--tras terminar la espera, sube un piso
             
         elsif(state = stdby) then
             loopcount<=0;
-             for loopcount in 1 to 20 loop
+             for loopcount in 1 to 3 loop
                 wait until rising_edge(CLK);
             end loop;
           flagfin <= '1';

@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Dec 13 16:51:15 2023
-# Process ID: 8540
-# Current directory: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.runs/synth_1
-# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
-# Log file: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.runs/synth_1/Top.vds
-# Journal file: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.runs/synth_1\vivado.jou
-# Running On: LAPTOP-ITU9JLQJ, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 8386 MB
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec 18 19:39:43 2023
+# Process ID: 14348
+# Current directory: C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log Top_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_tb.tcl
+# Log file: C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.runs/synth_1/Top_tb.vds
+# Journal file: C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: DESKTOP-P3TF5PD, OS: Windows, CPU Frequency: 4104 MHz, CPU Physical cores: 6, Host memory: 17095 MB
 #-----------------------------------------------------------
-source Top.tcl -notrace
+source Top_tb.tcl -notrace

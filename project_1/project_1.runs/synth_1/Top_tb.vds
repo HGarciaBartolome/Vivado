@@ -1,0 +1,376 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec 18 19:39:43 2023
+# Process ID: 14348
+# Current directory: C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log Top_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_tb.tcl
+# Log file: C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.runs/synth_1/Top_tb.vds
+# Journal file: C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: DESKTOP-P3TF5PD, OS: Windows, CPU Frequency: 4104 MHz, CPU Physical cores: 6, Host memory: 17095 MB
+#-----------------------------------------------------------
+source Top_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 473.922 ; gain = 177.777
+Command: read_checkpoint -auto_incremental -incremental C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/utils_1/imports/synth_1/Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top_tb -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12892
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1327.574 ; gain = 440.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_tb' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:38]
+INFO: [Synth 8-3491] module 'Top' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:4' bound to instance 'toptb' of component 'Top' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:18]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr0' of component 'SYNCHRNZR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr0' of component 'EDGEDTCTR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr1' of component 'SYNCHRNZR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:59]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr1' of component 'EDGEDTCTR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:64]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr2' of component 'SYNCHRNZR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:69]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr2' of component 'EDGEDTCTR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:74]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synchrnzr3' of component 'SYNCHRNZR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:79]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edgedtctr3' of component 'EDGEDTCTR' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:84]
+INFO: [Synth 8-3491] module 'FMS_Elevator' declared at 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:4' bound to instance 'Inst_fmsElevator' of component 'FMS_Elevator' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'FMS_Elevator' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:16]
+WARNING: [Synth 8-614] signal 'trabajando' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'FMS_Elevator' (0#1) [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Top' (0#1) [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd:18]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:75]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:77]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'Top_tb' (0#1) [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element loopcount_reg was removed.  [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd-59.0 with 1st driver pin 'GND' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:59]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd-59.0 with 2nd driver pin 'VCC' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:59]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd-59.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/Top_tb.vhd:59]
+WARNING: [Synth 8-7129] Port EMER in module Top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1435.754 ; gain = 548.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1435.754 ; gain = 548.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1435.754 ; gain = 548.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1435.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Floor[0]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Floor[1]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Floor[2]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Floor[3]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'EMER_LED'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MOTORS[0]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MOTORS[1]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DOORS'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RESET'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Button[0]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Button[1]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Button[2]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Button[3]'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'EMER'. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1525.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1525.852 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'MOTORS_reg' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'DOORS_reg' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_Floor_reg' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:86]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_EMER_reg' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 'pisoobjetivo_reg' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:27]
+WARNING: [Synth 8-327] inferring latch for variable 'pisoactual_reg' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:113]
+WARNING: [Synth 8-327] inferring latch for variable 'trabajando_reg' [C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/MOTORS_reg[1]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/MOTORS_reg[0]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/DOORS_reg) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/LED_Floor_reg[3]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/LED_Floor_reg[2]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/LED_Floor_reg[1]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/LED_Floor_reg[0]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/LED_EMER_reg) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[31]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[30]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[29]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[28]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[27]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[26]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[25]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[24]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[23]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[22]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[21]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[20]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[19]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[18]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[17]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[16]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[15]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[14]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[13]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[12]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[11]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[10]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[9]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[8]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[7]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[6]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[5]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[4]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[3]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[2]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[1]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoobjetivo_reg[0]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[31]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[30]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[29]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[28]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[27]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[26]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[25]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[24]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[23]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[22]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[21]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[20]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[19]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[18]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[17]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[16]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[15]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[14]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[13]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[12]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[11]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[10]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[9]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[8]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[7]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[6]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[5]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[4]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[3]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[2]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[1]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/pisoactual_reg[0]) is unused and will be removed from module Top_tb.
+WARNING: [Synth 8-3332] Sequential element (toptb/Inst_fmsElevator/trabajando_reg) is unused and will be removed from module Top_tb.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1525.852 ; gain = 638.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1525.852 ; gain = 548.629
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1525.852 ; gain = 638.727
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1525.852 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1525.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: da236305
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 102 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1525.852 ; gain = 1046.961
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pablo/Documents/GitHub/Vivado/project_1/project_1.runs/synth_1/Top_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_tb_utilization_synth.rpt -pb Top_tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 19:40:22 2023...
