@@ -9,17 +9,22 @@ entity FMS_Elevator is
  MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
  DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
  LED_Floor: out std_logic_vector(3 DOWNTO 0);
- LED_EMER: out std_logic
+ LED_EMER: out std_logic;
+ Pisoactsal: out integer;
+ Pisoobjsal: out integer
  );
 end FMS_Elevator;
 
 architecture Behavioral of FMS_Elevator is
     type STATES is (stdby, Up, Down, Error);
-    signal pisoactual , pisoobjetivo : integer :=0;
+    signal pisoactual : integer :=0;
+    signal pisoobjetivo : integer :=0;
     signal trabajando: std_logic:='0';
     signal state: STATES := stdby;
-    signal tiempoviaje , loopcount : integer :=0;
-    signal flagerror , flagfin: std_logic :='0';
+    signal tiempoviaje : integer :=0;
+    signal loopcount : integer :=0;
+    signal flagerror : std_logic :='0';
+    signal flagfin: std_logic :='0';
 begin
 state_register:process(CLK,RESET)
     begin
@@ -110,15 +115,17 @@ cambio_piso: process--se mueve al piso indicado, esperando x tiempo simulando el
            for loopcount in 1 to 10 loop
                 wait until rising_edge(CLK);
             end loop;
-            pisoactual<= pisoactual+1;--tras terminar la espera, sube un piso
-        
+            if(state = Up) then
+                pisoactual<= pisoactual+1;--tras terminar la espera, sube un piso
+            end if;
         elsif(state = Down) then
             loopcount<=0;
              for loopcount in 1 to 10 loop
                 wait until rising_edge(CLK);
             end loop;
-            pisoactual<= pisoactual-1;--tras terminar la espera, sube un piso
-            
+            if(state = Down) then
+                pisoactual<= pisoactual-1;--tras terminar la espera, sube un piso
+            end if;
         elsif(state = stdby) then
             loopcount<=0;
              for loopcount in 1 to 20 loop
@@ -129,4 +136,6 @@ cambio_piso: process--se mueve al piso indicado, esperando x tiempo simulando el
           flagfin <= '0';
         end if;
     end process;
+ Pisoactsal <= pisoactual;
+ Pisoobjsal <= pisoobjetivo;
 end Behavioral;
