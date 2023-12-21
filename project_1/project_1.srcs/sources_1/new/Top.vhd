@@ -10,10 +10,10 @@ entity Top is
  LED_Floor : OUT std_logic_vector(3 DOWNTO 0);
  MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
  DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
- EMER_LED : OUT std_logic;
- EDGES_SAL: out std_logic_vector(3 downto 0);
- Pisoactsal: out integer;
- Pisoobjsal: out integer
+ EMER_LED : OUT std_logic
+ --EDGES_SAL: out std_logic_vector(3 downto 0)
+ --Pisoactsal: out integer;
+ --Pisoobjsal: out integer
  );
 end Top;
 
@@ -42,9 +42,9 @@ COMPONENT FMS_Elevator
  MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
  DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
  LED_Floor: out std_logic_vector(3 DOWNTO 0);
- LED_EMER: out std_logic;
- Pisoactsal: out integer;
- Pisoobjsal: out integer
+ LED_EMER: out std_logic
+ --Pisoactsal: out integer;
+ --Pisoobjsal: out integer
  );
 END COMPONENT;
 
@@ -97,9 +97,9 @@ Inst_fmsElevator: FMS_Elevator PORT MAP(
  DOORS =>DOORS,
  MOTORS => MOTORS,
  LED_Floor => LED_Floor,
- LED_EMER => EMER_LED,
- Pisoactsal => Pisoactsal,
- Pisoobjsal => Pisoobjsal
+ LED_EMER => EMER_LED
+-- Pisoactsal => Pisoactsal,         --Para Simulacion
+-- Pisoobjsal => Pisoobjsal         --Para Simulacion
 );
-EDGEs_SAL <= EDGES;
+--EDGEs_SAL <= EDGES;         --Para Simulacion
 end Behavioral;

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Wed Dec 13 16:52:46 2023
+| Date         : Thu Dec 21 19:00:49 2023
 | Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     7 |
-|    Minimum number of control sets                        |     7 |
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    37 |
+| Unused register locations in slices containing registers |    42 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,9 +39,9 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     7 |
-| >= 0 to < 4        |     4 |
-| >= 4 to < 6        |     1 |
+| Total control sets |     9 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     4 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              59 |           25 |
-| No           | No                    | Yes                    |               0 |            0 |
+| No           | No                    | No                     |              33 |           14 |
+| No           | No                    | Yes                    |              33 |            8 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | No                    | Yes                    |               4 |            1 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,16 +70,18 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------------------------+---------------+------------------+------------------+----------------+--------------+
-|                Clock Signal                | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+--------------------------------------------+---------------+------------------+------------------+----------------+--------------+
-|  Inst_fmsElevator/DOORS_reg/G0             |               |                  |                1 |              1 |         1.00 |
-| ~Inst_fmsElevator/trabajando               |               |                  |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/trabajando_reg_i_2_n_1   |               |                  |                1 |              1 |         1.00 |
-|  Inst_edgedtctr1/E[0]                      |               |                  |                1 |              2 |         2.00 |
-|  Inst_fmsElevator/LED_Floor_reg[3]_i_2_n_1 |               |                  |                2 |              4 |         2.00 |
-|  CLK_IBUF_BUFG                             |               |                  |               10 |             22 |         2.20 |
-|  n_0_11_BUFG                               |               |                  |                9 |             32 |         3.56 |
-+--------------------------------------------+---------------+------------------+------------------+----------------+--------------+
++---------------------------------------------+--------------------------------------------------------------------------+--------------------------+------------------+----------------+--------------+
+|                 Clock Signal                |                               Enable Signal                              |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------+--------------------------------------------------------------------------+--------------------------+------------------+----------------+--------------+
+|  Inst_fmsElevator/CE__0                     |                                                                          |                          |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/RESET_T_reg_i_1_n_0       |                                                                          |                          |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/MOTORS_reg[1]_i_1_n_0     |                                                                          |                          |                1 |              3 |         3.00 |
+|  Inst_fmsElevator/Inst_Temporizador_Up/E[0] |                                                                          |                          |                1 |              4 |         4.00 |
+|  Inst_fmsElevator/objetivo_reg[3]_i_2_n_0   |                                                                          |                          |                1 |              4 |         4.00 |
+|  Inst_fmsElevator/LED_Floor_reg[3]_i_1_n_0  |                                                                          |                          |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                              | Inst_fmsElevator/Inst_Temporizador_Up/FSM_onehot_current_state_reg[1][0] | RESET_IBUF               |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                              |                                                                          |                          |                8 |             20 |         2.50 |
+|  CLK_IBUF_BUFG                              |                                                                          | Inst_fmsElevator/RESET_T |                8 |             33 |         4.12 |
++---------------------------------------------+--------------------------------------------------------------------------+--------------------------+------------------+----------------+--------------+
 
 

@@ -17,24 +17,24 @@ component Top is
         LED_Floor : OUT std_logic_vector(3 DOWNTO 0);
         MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
         DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
-        EMER_LED : OUT std_logic;
+        EMER_LED : OUT std_logic
         ---Apartir de aqui hay tests
-        EDGES_SAL: out std_logic_vector (3 DOWNTO 0);
-        Pisoactsal: out integer;
-        Pisoobjsal: out integer
+--        EDGES_SAL: out std_logic_vector (3 DOWNTO 0);
+--        Pisoactsal: out integer;
+--        Pisoobjsal: out integer
     );
 end component Top;
 signal Reset: std_logic := '0';
 signal Button: std_logic_vector(3 Downto 0) := "0000";
 signal CLK: std_logic := '0';
 signal Emer: std_logic := '0';
-signal Piso: std_logic_vector(3 downto 0):= "0000";
+signal Piso: std_logic_vector(3 downto 0);
 signal Motors: std_logic_vector(1 downto 0):= "00";
 signal Doors : std_logic := '0';
 signal Led_Emer:std_logic := '0';
-signal EDGES_SAL: std_logic_vector( 3 DOWNTO 0):= "0000";
-signal Pisoactsal: integer;
-signal Pisoobjsal: integer;
+--signal EDGES_SAL: std_logic_vector( 3 DOWNTO 0):= "0000";
+--signal Pisoactsal: integer;
+--signal Pisoobjsal: integer;
 begin
 Instacia:component top
     port map(
@@ -45,10 +45,12 @@ Instacia:component top
         LED_Floor => Piso,
         MOTORS => Motors,
         DOORS => Doors,
-        EMER_LED => Led_Emer,
-        EDGES_SAL => EDGES_SAL,
-        Pisoactsal => Pisoactsal,
-        Pisoobjsal => Pisoobjsal
+        EMER_LED => Led_Emer
+        
+        --NO reales
+--        EDGES_SAL => EDGES_SAL,
+--        Pisoactsal => Pisoactsal,
+--        Pisoobjsal => Pisoobjsal
        );
 
 Reloj: CLK <= not CLK after 5ns;

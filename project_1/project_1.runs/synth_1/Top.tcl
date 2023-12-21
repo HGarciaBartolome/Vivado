@@ -89,6 +89,7 @@ read_vhdl -library xil_defaultlib {
   {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/EDGEDTCTR.vhd}
   {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/FMS_Elevator.vhd}
   {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/SYNCHRNZR.vhd}
+  {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Temporizador.vhd}
   {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sources_1/new/Top.vhd}
 }
 OPTRACE "Adding files" END { }

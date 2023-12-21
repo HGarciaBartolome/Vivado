@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1702482667" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1703181466" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Top.dcp">
   <File Type="PA-TCL" Name="Top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_reports.tcl"/>
   <File Type="RDS-RDS" Name="Top.vds"/>
   <File Type="RDS-UTIL" Name="Top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/EDGEDTCTR.vhd">
@@ -28,6 +31,12 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Project/Project.srcs/sources_1/new/SYNCHRNZR.vhd"/>
         <Attr Name="ImportTime" Val="1702425716"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Temporizador.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
