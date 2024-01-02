@@ -10,17 +10,21 @@ entity FMS_Elevator is
  DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
  LED_Floor: out std_logic_vector(3 DOWNTO 0);
  LED_EMER: out std_logic;
+ PISOACT: in std_logic_vector(3 DOWNTO 0);
+ 
+ 
+ --- PARA TESTBENCH
  Pisoactsal: out integer;
  Pisoobjsal: out integer
  );
 end FMS_Elevator;
 
 architecture Behavioral of FMS_Elevator is
-    type STATES is (stdby, Up, Down, Error);
+    type STATES is (Arranque,Error,Piso1,Piso2,Piso3,Piso4,S12,S13,S14,B21,S23,S24,B31,B32,S34,B41,B42,B43);
     signal pisoactual : integer :=0;
     signal pisoobjetivo : integer :=0;
     signal trabajando: std_logic:='0';
-    signal state: STATES := stdby;
+    signal current_state, next_state: STATES;
     signal tiempoviaje : integer :=0;
     signal loopcount : integer :=0;
     signal flagerror : std_logic :='0';
@@ -28,18 +32,10 @@ architecture Behavioral of FMS_Elevator is
 begin
 state_register:process(CLK,RESET)
     begin
-        if rising_edge(CLK) then
-            if(pisoactual = pisoobjetivo) then
-                state <= stdby;
-            elsif (pisoactual < pisoobjetivo) then
-                state <= Up;
-            elsif (pisoactual > pisoobjetivo) then
-                state <= Down;
-            elsif flagerror ='1' then
-                state <= Error;
-            else 
-                state<= Error;
-            end if;
+        if (rising_edge (RESET)) then
+            current_state <= Arranque;
+        elsif (rising_edge(CLK)) then
+            current_state <= next_state;
         end if;
     end process;
 next_state_decoder: process(EDGE,RESET,flagfin)

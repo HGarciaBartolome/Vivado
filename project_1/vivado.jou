@@ -3,76 +3,14 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Dec 19 17:07:31 2023
-# Process ID: 16248
+# Start of session at: Tue Jan  2 20:53:42 2024
+# Process ID: 1356
 # Current directory: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11776 C:\Users\Hector\Desktop\Uni\SED\Projecto VHDL\Vivado\Vivado\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14064 C:\Users\Hector\Desktop\Uni\SED\Projecto VHDL\Vivado\Vivado\project_1\project_1.xpr
 # Log file: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/vivado.log
 # Journal file: C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1\vivado.jou
 # Running On: LAPTOP-ITU9JLQJ, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 8386 MB
 #-----------------------------------------------------------
-start_guioopen_project {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.xpupdupdate_compile_order -fileset sources_1
-file mkdir C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new
-file mkdir C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new
-file mkdir C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new
-file mkdir C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new
-file mkdir C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-file mkdir C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new
-file mkdir {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new}
-close [ open {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new/testbench.vhd} w ]
-add_files -fileset sim_1 {{C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.srcs/sim_1/new/testbench.vhd}}
-update_compile_order -fileset sim_1
-close_project
-open_project {C:/Users/Hector/Desktop/Uni/SED/Practica 3/P3/P3.xpr}
-update_compile_order -fileset sources_1
-close_project
+start_gui
 open_project {C:/Users/Hector/Desktop/Uni/SED/Projecto VHDL/Vivado/Vivado/project_1/project_1.xpr}
 update_compile_order -fileset sources_1
-launch_simulation
-source Top.tcl
-update_compile_order -fileset sim_1
-launch_simulation
-close_sim
-launch_simulation
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-launch_simulation
-launch_simulation
-source testbench.tcl
-close_sim
-update_compile_order -fileset sources_1
-launch_simulation
-source testbench.tcl
-update_compile_order -fileset sources_1
-set_property -name {xsim.simulate.runtime} -value {5000ns} -objects [get_filesets sim_1]
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
-launch_simulation
-source testbench.tcl
-close_sim
