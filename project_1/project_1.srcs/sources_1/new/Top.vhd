@@ -106,7 +106,7 @@ Inst_fmsElevator: FMS_Elevator PORT MAP(
 --Real
  RESET => RESET,
  CLK => CLK,
- EDGE => Button,
+ EDGE => EDGES,
  DOORS =>DOORS,
  MOTORS => MOTORS,
  LED_Floor => LED_Floor,

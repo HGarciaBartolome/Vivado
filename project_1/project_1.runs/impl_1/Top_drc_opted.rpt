@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Jan 16 13:22:04 2024
+| Date         : Tue Jan 16 13:38:12 2024
 | Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_drc -file Top_drc_opted.rpt -pb Top_drc_opted.pb -rpx Top_drc_opted.rpx
 | Design       : Top
@@ -49,14 +49,10 @@ Related violations: <none>
 
 IOSR-1#1 Warning
 IOB set reset sharing  
-IO RESET connects to flops which have these Inst_fmsElevator/pisoobjetivo_reg[0]_LDC_i_1_n_0,
-Inst_fmsElevator/pisoobjetivo_reg[0]_LDC_i_2_n_0,
-Inst_fmsElevator/pisoobjetivo_reg[1]_LDC_i_1_n_0,
-Inst_fmsElevator/pisoobjetivo_reg[1]_LDC_i_2_n_0,
-Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_i_1_n_0,
-Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_i_2_n_0,
-Inst_fmsElevator/pisoobjetivo_reg[3]_LDC_i_1_n_0
-Inst_fmsElevator/pisoobjetivo_reg[3]_LDC_i_2_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+IO RESET connects to flops which have these Inst_edgedtctr0/sreg_reg[1]_0, Inst_edgedtctr0/sreg_reg[1]_1,
+Inst_edgedtctr0/sreg_reg[1]_2, Inst_edgedtctr0/sreg_reg[1]_3,
+Inst_edgedtctr0/sreg_reg[2]_0, Inst_edgedtctr0/sreg_reg[2]_1,
+Inst_edgedtctr0/sreg_reg[2]_2, Inst_edgedtctr0/sreg_reg[2]_3 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
 Related violations: <none>
 
 
