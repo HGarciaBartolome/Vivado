@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Jan 16 13:38:55 2024
+| Date         : Tue Jan 16 17:14:19 2024
 | Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
 | Design       : Top
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 62
+             Violations found: 94
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 34         |
-| LUTAR-1   | Warning          | LUT drives async reset alert   | 11         |
-| TIMING-20 | Warning          | Non-clocked latch              | 16         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 68         |
+| LUTAR-1   | Warning          | LUT drives async reset alert   | 12         |
+| TIMING-20 | Warning          | Non-clocked latch              | 13         |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -97,110 +97,280 @@ Related violations: <none>
 
 TIMING-17#13 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[0]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/CE_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[1]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[2]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[3]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[4]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/flagdown_reg/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/FSM_sequential_current_state_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[0]_C/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[0]_P/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[1]_C/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[1]_P/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[2]_C/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[2]_P/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[3]_C/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_fmsElevator/pisoobjetivo_reg[3]_P/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr0/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr0/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr1/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr1/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr2/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr2/sreg_reg[0]/C is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Critical Warning
 Non-clocked sequential cell  
-The clock pin Inst_synchrnzr3/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/Inst_Temporizador/count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/flagdown_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[0]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[0]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[1]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[1]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[2]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[2]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[3]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/pisoobjetivo_reg[3]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_fmsElevator/resetTempo_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr0/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr0/sreg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr1/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr1/sreg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr2/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr2/sreg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Critical Warning
+Non-clocked sequential cell  
+The clock pin Inst_synchrnzr3/SYNC_OUT_reg_srl2/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
 Non-clocked sequential cell  
 The clock pin Inst_synchrnzr3/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
@@ -256,12 +426,17 @@ Related violations: <none>
 
 LUTAR-1#10 Warning
 LUT drives async reset alert  
-LUT cell Inst_fmsElevator/DOORS_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fmsElevator/DOORS_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Inst_fmsElevator/LEDEspera_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fmsElevator/LEDEspera_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#11 Warning
 LUT drives async reset alert  
-LUT cell Inst_fmsElevator/LED_EMER_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fmsElevator/LED_EMER_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Inst_fmsElevator/MOTORS_reg[0]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fmsElevator/DOORS_reg/PRE, Inst_fmsElevator/MOTORS_reg[0]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell Inst_fmsElevator/MOTORS_reg[1]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fmsElevator/MOTORS_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-20#1 Warning
@@ -271,82 +446,67 @@ Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/LED_EMER_reg cannot be properly analyzed as its control pin Inst_fmsElevator/LED_EMER_reg/G is not reached by a timing clock
+The latch Inst_fmsElevator/Inst_Temporizador/Output_reg cannot be properly analyzed as its control pin Inst_fmsElevator/Inst_Temporizador/Output_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/LED_Floor_reg[0] cannot be properly analyzed as its control pin Inst_fmsElevator/LED_Floor_reg[0]/G is not reached by a timing clock
+The latch Inst_fmsElevator/LEDEspera_reg cannot be properly analyzed as its control pin Inst_fmsElevator/LEDEspera_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/LED_Floor_reg[1] cannot be properly analyzed as its control pin Inst_fmsElevator/LED_Floor_reg[1]/G is not reached by a timing clock
+The latch Inst_fmsElevator/MOTORS_reg[0] cannot be properly analyzed as its control pin Inst_fmsElevator/MOTORS_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/LED_Floor_reg[2] cannot be properly analyzed as its control pin Inst_fmsElevator/LED_Floor_reg[2]/G is not reached by a timing clock
+The latch Inst_fmsElevator/MOTORS_reg[1] cannot be properly analyzed as its control pin Inst_fmsElevator/MOTORS_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/LED_Floor_reg[3] cannot be properly analyzed as its control pin Inst_fmsElevator/LED_Floor_reg[3]/G is not reached by a timing clock
+The latch Inst_fmsElevator/flag1_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag1_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/MOTORS_reg[0] cannot be properly analyzed as its control pin Inst_fmsElevator/MOTORS_reg[0]/G is not reached by a timing clock
+The latch Inst_fmsElevator/flag2_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag2_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/MOTORS_reg[1] cannot be properly analyzed as its control pin Inst_fmsElevator/MOTORS_reg[1]/G is not reached by a timing clock
+The latch Inst_fmsElevator/flag3_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag3_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/flag1_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag1_reg/G is not reached by a timing clock
+The latch Inst_fmsElevator/flag4_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag4_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/flag2_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag2_reg/G is not reached by a timing clock
+The latch Inst_fmsElevator/pisoobjetivo_reg[0]_LDC cannot be properly analyzed as its control pin Inst_fmsElevator/pisoobjetivo_reg[0]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/flag3_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag3_reg/G is not reached by a timing clock
+The latch Inst_fmsElevator/pisoobjetivo_reg[1]_LDC cannot be properly analyzed as its control pin Inst_fmsElevator/pisoobjetivo_reg[1]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch Inst_fmsElevator/flag4_reg cannot be properly analyzed as its control pin Inst_fmsElevator/flag4_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#13 Warning
-Non-clocked latch  
-The latch Inst_fmsElevator/pisoobjetivo_reg[0]_LDC cannot be properly analyzed as its control pin Inst_fmsElevator/pisoobjetivo_reg[0]_LDC/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#14 Warning
-Non-clocked latch  
-The latch Inst_fmsElevator/pisoobjetivo_reg[1]_LDC cannot be properly analyzed as its control pin Inst_fmsElevator/pisoobjetivo_reg[1]_LDC/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#15 Warning
-Non-clocked latch  
 The latch Inst_fmsElevator/pisoobjetivo_reg[2]_LDC cannot be properly analyzed as its control pin Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#16 Warning
+TIMING-20#13 Warning
 Non-clocked latch  
 The latch Inst_fmsElevator/pisoobjetivo_reg[3]_LDC cannot be properly analyzed as its control pin Inst_fmsElevator/pisoobjetivo_reg[3]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 16 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 13 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 

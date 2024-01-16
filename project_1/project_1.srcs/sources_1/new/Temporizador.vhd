@@ -32,12 +32,31 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Temporizador is
---  Port ( );
+    Generic(Tiempo : integer := 5 ); -- Tiempo que se quiere esperar en segundos. Max 20s.
+    Port ( 
+           CLK : in STD_LOGIC;
+           CE : in STD_LOGIC; --Chip enable
+           RESET : in STD_LOGIC;
+           Output : out std_logic); 
 end Temporizador;
 
 architecture Behavioral of Temporizador is
+signal count,max: integer := 0;
 
 begin
+max<= Tiempo*100000000;
 
-
+process(CLK,RESET)
+begin
+    if (RESET = '1') then
+        count <= 0;
+        Output<='0';
+    elsif (CE = '1') then
+        if (count>= max)then
+            Output<='1';
+        elsif(rising_edge(CLK)) then
+            count <= count + 1;
+        end if;
+    end if;
+end process;
 end Behavioral;

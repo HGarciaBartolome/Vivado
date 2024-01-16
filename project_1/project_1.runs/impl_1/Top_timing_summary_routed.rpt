@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Jan 16 13:38:56 2024
+| Date         : Tue Jan 16 17:14:20 2024
 | Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Top_timing_summary_routed.rpt -pb Top_timing_summary_routed.pb -rpx Top_timing_summary_routed.rpx -warn_on_violation
 | Design       : Top
@@ -42,9 +42,9 @@ Timing Summary Report
 
 Rule       Severity          Description                     Violations  
 ---------  ----------------  ------------------------------  ----------  
-TIMING-17  Critical Warning  Non-clocked sequential cell     34          
-LUTAR-1    Warning           LUT drives async reset alert    11          
-TIMING-20  Warning           Non-clocked latch               16          
+TIMING-17  Critical Warning  Non-clocked sequential cell     68          
+LUTAR-1    Warning           LUT drives async reset alert    12          
+TIMING-20  Warning           Non-clocked latch               13          
 LATCH-1    Advisory          Existing latches in the design  1           
 
 Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
@@ -55,12 +55,12 @@ check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock (132)
+1. checking no_clock (185)
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
-4. checking unconstrained_internal_endpoints (77)
+4. checking unconstrained_internal_endpoints (174)
 5. checking no_input_delay (9)
-6. checking no_output_delay (8)
+6. checking no_output_delay (10)
 7. checking multiple_clock (0)
 8. checking generated_clocks (0)
 9. checking loops (0)
@@ -68,17 +68,17 @@ Table of Contents
 11. checking partial_output_delay (0)
 12. checking latch_loops (0)
 
-1. checking no_clock (132)
+1. checking no_clock (185)
 --------------------------
- There are 34 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
+ There are 68 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: PISOACT[0] (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: PISOACT[0] (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: PISOACT[1] (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: PISOACT[1] (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: PISOACT[2] (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: PISOACT[2] (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: PISOACT[3] (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: PISOACT[3] (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: Inst_edgedtctr0/sreg_reg[0]/Q (HIGH)
 
@@ -104,15 +104,81 @@ Table of Contents
 
  There are 4 register/latch pins with no clock driven by root clock pin: Inst_edgedtctr3/sreg_reg[2]/Q (HIGH)
 
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/CE_reg/Q (HIGH)
+
  There are 4 register/latch pins with no clock driven by root clock pin: Inst_fmsElevator/FSM_sequential_current_state_reg[0]/Q (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: Inst_fmsElevator/FSM_sequential_current_state_reg[1]/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: Inst_fmsElevator/FSM_sequential_current_state_reg[1]/Q (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: Inst_fmsElevator/FSM_sequential_current_state_reg[2]/Q (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: Inst_fmsElevator/FSM_sequential_current_state_reg[3]/Q (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: Inst_fmsElevator/FSM_sequential_current_state_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[13]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[14]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[15]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[16]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[17]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[18]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[19]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[20]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[21]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[22]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[23]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[24]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[25]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[26]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[27]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[28]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[29]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[30]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[31]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_fmsElevator/Inst_Temporizador/count_reg[9]/Q (HIGH)
 
 
 2. checking constant_clock (0)
@@ -125,9 +191,9 @@ Table of Contents
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints (77)
--------------------------------------------------
- There are 77 pins that are not constrained for maximum delay. (HIGH)
+4. checking unconstrained_internal_endpoints (174)
+--------------------------------------------------
+ There are 174 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -139,9 +205,9 @@ Table of Contents
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
-6. checking no_output_delay (8)
--------------------------------
- There are 8 ports with no output delay specified. (HIGH)
+6. checking no_output_delay (10)
+--------------------------------
+ There are 10 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -186,7 +252,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-        inf        0.000                      0                   85          inf        0.000                      0                   85           NA           NA                      NA                    NA  
+        inf        0.000                      0                  188          inf        0.000                      0                  188           NA           NA                      NA                    NA  
 
 
 There are no user specified timing constraints.
@@ -255,217 +321,239 @@ Path Group:  (none)
 From Clock:  
   To Clock:  
 
-Max Delay            85 Endpoints
-Min Delay            85 Endpoints
+Max Delay           188 Endpoints
+Min Delay           188 Endpoints
 --------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 Inst_fmsElevator/LED_Floor_reg[2]/G
-                            (positive level-sensitive latch)
-  Destination:            LED_Floor[2]
+  Source:                 Inst_fmsElevator/pisoobjetivo_reg[1]_P/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            BCD_Floor[3]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.453ns  (logic 4.112ns (63.720%)  route 2.341ns (36.280%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        10.067ns  (logic 4.254ns (42.259%)  route 5.813ns (57.741%))
+  Logic Levels:           4  (FDPE=1 LUT3=1 LUT6=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y95          LDCE                         0.000     0.000 r  Inst_fmsElevator/LED_Floor_reg[2]/G
-    SLICE_X0Y95          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_fmsElevator/LED_Floor_reg[2]/Q
-                         net (fo=1, routed)           2.341     2.900    LED_Floor_OBUF[2]
-    J13                  OBUF (Prop_obuf_I_O)         3.553     6.453 r  LED_Floor_OBUF[2]_inst/O
-                         net (fo=0)                   0.000     6.453    LED_Floor[2]
-    J13                                                               r  LED_Floor[2] (OUT)
+    SLICE_X5Y72          FDPE                         0.000     0.000 r  Inst_fmsElevator/pisoobjetivo_reg[1]_P/C
+    SLICE_X5Y72          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  Inst_fmsElevator/pisoobjetivo_reg[1]_P/Q
+                         net (fo=1, routed)           0.950     1.406    Inst_fmsElevator/pisoobjetivo_reg[1]_P_n_0
+    SLICE_X5Y73          LUT3 (Prop_lut3_I0_O)        0.124     1.530 r  Inst_fmsElevator/BCD_Floor_OBUF[6]_inst_i_3/O
+                         net (fo=15, routed)          2.422     3.952    Inst_fmsElevator/Pisoobjsal[1]
+    SLICE_X0Y92          LUT6 (Prop_lut6_I1_O)        0.124     4.076 r  Inst_fmsElevator/BCD_Floor_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           2.441     6.517    BCD_Floor_OBUF[3]
+    K13                  OBUF (Prop_obuf_I_O)         3.550    10.067 r  BCD_Floor_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    10.067    BCD_Floor[3]
+    K13                                                               r  BCD_Floor[3] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/LED_Floor_reg[0]/G
-                            (positive level-sensitive latch)
-  Destination:            LED_Floor[0]
+  Source:                 Inst_fmsElevator/pisoobjetivo_reg[1]_P/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            BCD_Floor[4]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.341ns  (logic 4.079ns (64.337%)  route 2.261ns (35.663%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        9.404ns  (logic 4.197ns (44.631%)  route 5.207ns (55.369%))
+  Logic Levels:           4  (FDPE=1 LUT3=1 LUT6=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y95          LDCE                         0.000     0.000 r  Inst_fmsElevator/LED_Floor_reg[0]/G
-    SLICE_X0Y95          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_fmsElevator/LED_Floor_reg[0]/Q
-                         net (fo=1, routed)           2.261     2.820    LED_Floor_OBUF[0]
-    H17                  OBUF (Prop_obuf_I_O)         3.520     6.341 r  LED_Floor_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     6.341    LED_Floor[0]
-    H17                                                               r  LED_Floor[0] (OUT)
+    SLICE_X5Y72          FDPE                         0.000     0.000 r  Inst_fmsElevator/pisoobjetivo_reg[1]_P/C
+    SLICE_X5Y72          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  Inst_fmsElevator/pisoobjetivo_reg[1]_P/Q
+                         net (fo=1, routed)           0.950     1.406    Inst_fmsElevator/pisoobjetivo_reg[1]_P_n_0
+    SLICE_X5Y73          LUT3 (Prop_lut3_I0_O)        0.124     1.530 r  Inst_fmsElevator/BCD_Floor_OBUF[6]_inst_i_3/O
+                         net (fo=15, routed)          2.388     3.918    Inst_fmsElevator/Pisoobjsal[1]
+    SLICE_X0Y92          LUT6 (Prop_lut6_I4_O)        0.124     4.042 r  Inst_fmsElevator/BCD_Floor_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           1.868     5.911    BCD_Floor_OBUF[4]
+    K16                  OBUF (Prop_obuf_I_O)         3.493     9.404 r  BCD_Floor_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     9.404    BCD_Floor[4]
+    K16                                                               r  BCD_Floor[4] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/LED_EMER_reg/G
+  Source:                 Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
                             (positive level-sensitive latch)
-  Destination:            EMER_LED
+  Destination:            BCD_Floor[0]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.308ns  (logic 4.340ns (68.801%)  route 1.968ns (31.199%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        8.951ns  (logic 4.640ns (51.839%)  route 4.311ns (48.161%))
+  Logic Levels:           4  (LDCE=1 LUT3=1 LUT6=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y75          LDCE                         0.000     0.000 r  Inst_fmsElevator/LED_EMER_reg/G
-    SLICE_X1Y75          LDCE (EnToQ_ldce_G_Q)        0.788     0.788 r  Inst_fmsElevator/LED_EMER_reg/Q
-                         net (fo=1, routed)           1.968     2.756    EMER_LED_OBUF
-    V17                  OBUF (Prop_obuf_I_O)         3.552     6.308 r  EMER_LED_OBUF_inst/O
-                         net (fo=0)                   0.000     6.308    EMER_LED
-    V17                                                               r  EMER_LED (OUT)
+    SLICE_X6Y73          LDCE                         0.000     0.000 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
+    SLICE_X6Y73          LDCE (EnToQ_ldce_G_Q)        0.625     0.625 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/Q
+                         net (fo=2, routed)           0.790     1.415    Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_n_0
+    SLICE_X5Y73          LUT3 (Prop_lut3_I1_O)        0.152     1.567 r  Inst_fmsElevator/BCD_Floor_OBUF[6]_inst_i_4/O
+                         net (fo=14, routed)          1.853     3.421    Inst_fmsElevator/Pisoobjsal[2]
+    SLICE_X0Y91          LUT6 (Prop_lut6_I2_O)        0.326     3.747 r  Inst_fmsElevator/BCD_Floor_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.668     5.414    BCD_Floor_OBUF[0]
+    L18                  OBUF (Prop_obuf_I_O)         3.537     8.951 r  BCD_Floor_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     8.951    BCD_Floor[0]
+    L18                                                               r  BCD_Floor[0] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/MOTORS_reg[0]/G
+  Source:                 Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
                             (positive level-sensitive latch)
-  Destination:            MOTORS[0]
+  Destination:            BCD_Floor[6]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.214ns  (logic 4.114ns (66.204%)  route 2.100ns (33.796%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        8.813ns  (logic 4.680ns (53.106%)  route 4.133ns (46.894%))
+  Logic Levels:           4  (LDCE=1 LUT3=1 LUT6=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y75          LDCE                         0.000     0.000 r  Inst_fmsElevator/MOTORS_reg[0]/G
-    SLICE_X0Y75          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_fmsElevator/MOTORS_reg[0]/Q
-                         net (fo=1, routed)           2.100     2.659    MOTORS_OBUF[0]
-    U17                  OBUF (Prop_obuf_I_O)         3.555     6.214 r  MOTORS_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     6.214    MOTORS[0]
-    U17                                                               r  MOTORS[0] (OUT)
+    SLICE_X6Y73          LDCE                         0.000     0.000 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
+    SLICE_X6Y73          LDCE (EnToQ_ldce_G_Q)        0.625     0.625 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/Q
+                         net (fo=2, routed)           0.790     1.415    Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_n_0
+    SLICE_X5Y73          LUT3 (Prop_lut3_I1_O)        0.152     1.567 f  Inst_fmsElevator/BCD_Floor_OBUF[6]_inst_i_4/O
+                         net (fo=14, routed)          1.018     2.585    Inst_fmsElevator/Pisoobjsal[2]
+    SLICE_X2Y72          LUT6 (Prop_lut6_I2_O)        0.326     2.911 r  Inst_fmsElevator/BCD_Floor_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           2.324     5.236    BCD_Floor_OBUF[6]
+    T10                  OBUF (Prop_obuf_I_O)         3.577     8.813 r  BCD_Floor_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     8.813    BCD_Floor[6]
+    T10                                                               r  BCD_Floor[6] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/MOTORS_reg[1]/G
+  Source:                 Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
                             (positive level-sensitive latch)
-  Destination:            MOTORS[1]
+  Destination:            BCD_Floor[1]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        6.063ns  (logic 4.114ns (67.854%)  route 1.949ns (32.146%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        8.550ns  (logic 4.664ns (54.545%)  route 3.887ns (45.455%))
+  Logic Levels:           4  (LDCE=1 LUT3=1 LUT6=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y75          LDCE                         0.000     0.000 r  Inst_fmsElevator/MOTORS_reg[1]/G
-    SLICE_X0Y75          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_fmsElevator/MOTORS_reg[1]/Q
-                         net (fo=1, routed)           1.949     2.508    MOTORS_OBUF[1]
-    U16                  OBUF (Prop_obuf_I_O)         3.555     6.063 r  MOTORS_OBUF[1]_inst/O
-                         net (fo=0)                   0.000     6.063    MOTORS[1]
-    U16                                                               r  MOTORS[1] (OUT)
+    SLICE_X6Y73          LDCE                         0.000     0.000 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
+    SLICE_X6Y73          LDCE (EnToQ_ldce_G_Q)        0.625     0.625 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/Q
+                         net (fo=2, routed)           0.790     1.415    Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_n_0
+    SLICE_X5Y73          LUT3 (Prop_lut3_I1_O)        0.152     1.567 r  Inst_fmsElevator/BCD_Floor_OBUF[6]_inst_i_4/O
+                         net (fo=14, routed)          1.020     2.587    Inst_fmsElevator/Pisoobjsal[2]
+    SLICE_X2Y72          LUT6 (Prop_lut6_I2_O)        0.326     2.913 r  Inst_fmsElevator/BCD_Floor_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           2.076     4.990    BCD_Floor_OBUF[1]
+    T11                  OBUF (Prop_obuf_I_O)         3.561     8.550 r  BCD_Floor_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     8.550    BCD_Floor[1]
+    T11                                                               r  BCD_Floor[1] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/DOORS_reg/L7/G
+  Source:                 Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
                             (positive level-sensitive latch)
-  Destination:            DOORS
+  Destination:            BCD_Floor[2]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.982ns  (logic 4.107ns (68.653%)  route 1.875ns (31.347%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        8.002ns  (logic 4.637ns (57.939%)  route 3.366ns (42.061%))
+  Logic Levels:           4  (LDCE=1 LUT3=1 LUT6=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y74          LDCE                         0.000     0.000 r  Inst_fmsElevator/DOORS_reg/L7/G
-    SLICE_X1Y74          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_fmsElevator/DOORS_reg/L7/Q
-                         net (fo=1, routed)           1.875     2.434    DOORS_OBUF
-    V16                  OBUF (Prop_obuf_I_O)         3.548     5.982 r  DOORS_OBUF_inst/O
-                         net (fo=0)                   0.000     5.982    DOORS
-    V16                                                               r  DOORS (OUT)
+    SLICE_X6Y73          LDCE                         0.000     0.000 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/G
+    SLICE_X6Y73          LDCE (EnToQ_ldce_G_Q)        0.625     0.625 r  Inst_fmsElevator/pisoobjetivo_reg[2]_LDC/Q
+                         net (fo=2, routed)           0.790     1.415    Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_n_0
+    SLICE_X5Y73          LUT3 (Prop_lut3_I1_O)        0.152     1.567 r  Inst_fmsElevator/BCD_Floor_OBUF[6]_inst_i_4/O
+                         net (fo=14, routed)          1.047     2.614    Inst_fmsElevator/Pisoobjsal[2]
+    SLICE_X1Y74          LUT6 (Prop_lut6_I2_O)        0.326     2.940 r  Inst_fmsElevator/BCD_Floor_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           1.529     4.469    BCD_Floor_OBUF[2]
+    P15                  OBUF (Prop_obuf_I_O)         3.534     8.002 r  BCD_Floor_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     8.002    BCD_Floor[2]
+    P15                                                               r  BCD_Floor[2] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/LED_Floor_reg[1]/G
-                            (positive level-sensitive latch)
-  Destination:            LED_Floor[1]
+  Source:                 PISOACT[2]
+                            (input port)
+  Destination:            LED_Piso[2]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.976ns  (logic 4.094ns (68.511%)  route 1.882ns (31.489%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        7.745ns  (logic 5.038ns (65.048%)  route 2.707ns (34.952%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y95          LDCE                         0.000     0.000 r  Inst_fmsElevator/LED_Floor_reg[1]/G
-    SLICE_X0Y95          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_fmsElevator/LED_Floor_reg[1]/Q
-                         net (fo=1, routed)           1.882     2.441    LED_Floor_OBUF[1]
-    K15                  OBUF (Prop_obuf_I_O)         3.535     5.976 r  LED_Floor_OBUF[1]_inst/O
-                         net (fo=0)                   0.000     5.976    LED_Floor[1]
-    K15                                                               r  LED_Floor[1] (OUT)
+    M13                                               0.000     0.000 r  PISOACT[2] (IN)
+                         net (fo=0)                   0.000     0.000    PISOACT[2]
+    M13                  IBUF (Prop_ibuf_I_O)         1.485     1.485 r  PISOACT_IBUF[2]_inst/O
+                         net (fo=9, routed)           2.707     4.192    LED_Piso_OBUF[2]
+    J13                  OBUF (Prop_obuf_I_O)         3.553     7.745 r  LED_Piso_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     7.745    LED_Piso[2]
+    J13                                                               r  LED_Piso[2] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/LED_Floor_reg[3]/G
-                            (positive level-sensitive latch)
-  Destination:            LED_Floor[3]
+  Source:                 PISOACT[3]
+                            (input port)
+  Destination:            LED_Piso[3]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.782ns  (logic 4.110ns (71.080%)  route 1.672ns (28.920%))
-  Logic Levels:           2  (LDCE=1 OBUF=1)
+  Data Path Delay:        7.555ns  (logic 5.028ns (66.550%)  route 2.527ns (33.450%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y83          LDCE                         0.000     0.000 r  Inst_fmsElevator/LED_Floor_reg[3]/G
-    SLICE_X0Y83          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_fmsElevator/LED_Floor_reg[3]/Q
-                         net (fo=1, routed)           1.672     2.231    LED_Floor_OBUF[3]
-    N14                  OBUF (Prop_obuf_I_O)         3.551     5.782 r  LED_Floor_OBUF[3]_inst/O
-                         net (fo=0)                   0.000     5.782    LED_Floor[3]
-    N14                                                               r  LED_Floor[3] (OUT)
+    R15                                               0.000     0.000 r  PISOACT[3] (IN)
+                         net (fo=0)                   0.000     0.000    PISOACT[3]
+    R15                  IBUF (Prop_ibuf_I_O)         1.477     1.477 r  PISOACT_IBUF[3]_inst/O
+                         net (fo=9, routed)           2.527     4.004    LED_Piso_OBUF[3]
+    N14                  OBUF (Prop_obuf_I_O)         3.551     7.555 r  LED_Piso_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     7.555    LED_Piso[3]
+    N14                                                               r  LED_Piso[3] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 PISOACT[0]
                             (input port)
-  Destination:            Inst_fmsElevator/FSM_sequential_current_state_reg[0]/D
+  Destination:            LED_Piso[0]
+                            (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.305ns  (logic 2.166ns (40.820%)  route 3.140ns (59.180%))
-  Logic Levels:           4  (IBUF=1 LUT4=1 LUT6=1 MUXF7=1)
+  Data Path Delay:        7.329ns  (logic 4.998ns (68.194%)  route 2.331ns (31.806%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
     J15                                               0.000     0.000 r  PISOACT[0] (IN)
                          net (fo=0)                   0.000     0.000    PISOACT[0]
     J15                  IBUF (Prop_ibuf_I_O)         1.478     1.478 r  PISOACT_IBUF[0]_inst/O
-                         net (fo=10, routed)          2.178     3.656    Inst_fmsElevator/PISOACT_IBUF[0]
-    SLICE_X0Y78          LUT4 (Prop_lut4_I3_O)        0.150     3.806 r  Inst_fmsElevator/FSM_sequential_current_state[0]_i_5/O
-                         net (fo=1, routed)           0.962     4.767    Inst_fmsElevator/FSM_sequential_current_state[0]_i_5_n_0
-    SLICE_X0Y76          LUT6 (Prop_lut6_I4_O)        0.326     5.093 r  Inst_fmsElevator/FSM_sequential_current_state[0]_i_2/O
-                         net (fo=1, routed)           0.000     5.093    Inst_fmsElevator/FSM_sequential_current_state[0]_i_2_n_0
-    SLICE_X0Y76          MUXF7 (Prop_muxf7_I0_O)      0.212     5.305 r  Inst_fmsElevator/FSM_sequential_current_state_reg[0]_i_1/O
-                         net (fo=1, routed)           0.000     5.305    Inst_fmsElevator/current_state__0[0]
-    SLICE_X0Y76          FDPE                                         r  Inst_fmsElevator/FSM_sequential_current_state_reg[0]/D
+                         net (fo=9, routed)           2.331     3.809    LED_Piso_OBUF[0]
+    H17                  OBUF (Prop_obuf_I_O)         3.520     7.329 r  LED_Piso_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     7.329    LED_Piso[0]
+    H17                                                               r  LED_Piso[0] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 PISOACT[0]
+  Source:                 PISOACT[1]
                             (input port)
-  Destination:            Inst_fmsElevator/FSM_sequential_current_state_reg[2]/D
+  Destination:            LED_Piso[1]
+                            (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        5.180ns  (logic 1.726ns (33.313%)  route 3.454ns (66.687%))
-  Logic Levels:           3  (IBUF=1 LUT6=2)
+  Data Path Delay:        7.299ns  (logic 5.015ns (68.708%)  route 2.284ns (31.292%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    J15                                               0.000     0.000 r  PISOACT[0] (IN)
-                         net (fo=0)                   0.000     0.000    PISOACT[0]
-    J15                  IBUF (Prop_ibuf_I_O)         1.478     1.478 r  PISOACT_IBUF[0]_inst/O
-                         net (fo=10, routed)          2.342     3.819    Inst_fmsElevator/PISOACT_IBUF[0]
-    SLICE_X0Y78          LUT6 (Prop_lut6_I2_O)        0.124     3.943 r  Inst_fmsElevator/FSM_sequential_current_state[2]_i_4/O
-                         net (fo=1, routed)           1.113     5.056    Inst_fmsElevator/FSM_sequential_current_state[2]_i_4_n_0
-    SLICE_X1Y76          LUT6 (Prop_lut6_I5_O)        0.124     5.180 r  Inst_fmsElevator/FSM_sequential_current_state[2]_i_1/O
-                         net (fo=1, routed)           0.000     5.180    Inst_fmsElevator/current_state__0[2]
-    SLICE_X1Y76          FDCE                                         r  Inst_fmsElevator/FSM_sequential_current_state_reg[2]/D
+    L16                                               0.000     0.000 r  PISOACT[1] (IN)
+                         net (fo=0)                   0.000     0.000    PISOACT[1]
+    L16                  IBUF (Prop_ibuf_I_O)         1.480     1.480 r  PISOACT_IBUF[1]_inst/O
+                         net (fo=9, routed)           2.284     3.764    LED_Piso_OBUF[1]
+    K15                  OBUF (Prop_obuf_I_O)         3.535     7.299 r  LED_Piso_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     7.299    LED_Piso[1]
+    K15                                                               r  LED_Piso[1] (OUT)
   -------------------------------------------------------------------    -------------------
 
 
@@ -475,22 +563,71 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 Inst_fmsElevator/FSM_sequential_current_state_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            Inst_fmsElevator/FSM_sequential_current_state_reg[1]/D
+  Source:                 Inst_edgedtctr2/sreg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Inst_edgedtctr2/sreg_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.308ns  (logic 0.186ns (60.379%)  route 0.122ns (39.621%))
-  Logic Levels:           2  (FDPE=1 LUT6=1)
+  Data Path Delay:        0.267ns  (logic 0.148ns (55.359%)  route 0.119ns (44.641%))
+  Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y77          FDPE                         0.000     0.000 r  Inst_fmsElevator/FSM_sequential_current_state_reg[4]/C
-    SLICE_X0Y77          FDPE (Prop_fdpe_C_Q)         0.141     0.141 f  Inst_fmsElevator/FSM_sequential_current_state_reg[4]/Q
-                         net (fo=17, routed)          0.122     0.263    Inst_fmsElevator/current_state[4]
-    SLICE_X1Y77          LUT6 (Prop_lut6_I2_O)        0.045     0.308 r  Inst_fmsElevator/FSM_sequential_current_state[1]_i_1/O
-                         net (fo=1, routed)           0.000     0.308    Inst_fmsElevator/current_state__0[1]
-    SLICE_X1Y77          FDCE                                         r  Inst_fmsElevator/FSM_sequential_current_state_reg[1]/D
+    SLICE_X2Y76          FDRE                         0.000     0.000 r  Inst_edgedtctr2/sreg_reg[0]/C
+    SLICE_X2Y76          FDRE (Prop_fdre_C_Q)         0.148     0.148 r  Inst_edgedtctr2/sreg_reg[0]/Q
+                         net (fo=2, routed)           0.119     0.267    Inst_edgedtctr2/sreg[0]
+    SLICE_X0Y76          FDRE                                         r  Inst_edgedtctr2/sreg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_edgedtctr0/sreg_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Inst_edgedtctr0/sreg_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.277ns  (logic 0.128ns (46.160%)  route 0.149ns (53.841%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y75          FDRE                         0.000     0.000 r  Inst_edgedtctr0/sreg_reg[1]/C
+    SLICE_X4Y75          FDRE (Prop_fdre_C_Q)         0.128     0.128 r  Inst_edgedtctr0/sreg_reg[1]/Q
+                         net (fo=9, routed)           0.149     0.277    Inst_edgedtctr0/sreg[1]
+    SLICE_X4Y75          FDRE                                         r  Inst_edgedtctr0/sreg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_edgedtctr3/sreg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Inst_edgedtctr3/sreg_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.282ns  (logic 0.148ns (52.494%)  route 0.134ns (47.506%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y76          FDRE                         0.000     0.000 r  Inst_edgedtctr3/sreg_reg[0]/C
+    SLICE_X2Y76          FDRE (Prop_fdre_C_Q)         0.148     0.148 r  Inst_edgedtctr3/sreg_reg[0]/Q
+                         net (fo=2, routed)           0.134     0.282    Inst_edgedtctr3/sreg[0]
+    SLICE_X4Y77          FDRE                                         r  Inst_edgedtctr3/sreg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_synchrnzr1/sreg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Inst_synchrnzr1/SYNC_OUT_reg_srl2/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.304ns  (logic 0.141ns (46.390%)  route 0.163ns (53.610%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y79          FDRE                         0.000     0.000 r  Inst_synchrnzr1/sreg_reg[0]/C
+    SLICE_X0Y79          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_synchrnzr1/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.163     0.304    Inst_synchrnzr1/sreg_reg_n_0_[0]
+    SLICE_X2Y76          SRL16E                                       r  Inst_synchrnzr1/SYNC_OUT_reg_srl2/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -499,15 +636,15 @@ Slack:                    inf
   Destination:            Inst_edgedtctr1/sreg_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.321ns  (logic 0.148ns (46.157%)  route 0.173ns (53.843%))
+  Data Path Delay:        0.312ns  (logic 0.148ns (47.447%)  route 0.164ns (52.553%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X2Y75          FDRE                         0.000     0.000 r  Inst_edgedtctr1/sreg_reg[0]/C
-    SLICE_X2Y75          FDRE (Prop_fdre_C_Q)         0.148     0.148 r  Inst_edgedtctr1/sreg_reg[0]/Q
-                         net (fo=2, routed)           0.173     0.321    Inst_edgedtctr1/sreg[0]
-    SLICE_X5Y75          FDRE                                         r  Inst_edgedtctr1/sreg_reg[1]/D
+    SLICE_X2Y76          FDRE                         0.000     0.000 r  Inst_edgedtctr1/sreg_reg[0]/C
+    SLICE_X2Y76          FDRE (Prop_fdre_C_Q)         0.148     0.148 r  Inst_edgedtctr1/sreg_reg[0]/Q
+                         net (fo=2, routed)           0.164     0.312    Inst_edgedtctr1/sreg[0]
+    SLICE_X3Y76          FDRE                                         r  Inst_edgedtctr1/sreg_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -516,66 +653,15 @@ Slack:                    inf
   Destination:            Inst_edgedtctr2/sreg_reg[2]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.322ns  (logic 0.141ns (43.738%)  route 0.181ns (56.262%))
+  Data Path Delay:        0.326ns  (logic 0.141ns (43.258%)  route 0.185ns (56.742%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y78          FDRE                         0.000     0.000 r  Inst_edgedtctr2/sreg_reg[1]/C
-    SLICE_X3Y78          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_edgedtctr2/sreg_reg[1]/Q
-                         net (fo=2, routed)           0.181     0.322    Inst_edgedtctr2/sreg[1]
-    SLICE_X3Y78          FDRE                                         r  Inst_edgedtctr2/sreg_reg[2]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Inst_synchrnzr3/sreg_reg[0]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            Inst_synchrnzr3/SYNC_OUT_reg_srl2/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.334ns  (logic 0.164ns (49.062%)  route 0.170ns (50.938%))
-  Logic Levels:           1  (FDRE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X2Y82          FDRE                         0.000     0.000 r  Inst_synchrnzr3/sreg_reg[0]/C
-    SLICE_X2Y82          FDRE (Prop_fdre_C_Q)         0.164     0.164 r  Inst_synchrnzr3/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.170     0.334    Inst_synchrnzr3/sreg_reg_n_0_[0]
-    SLICE_X2Y81          SRL16E                                       r  Inst_synchrnzr3/SYNC_OUT_reg_srl2/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Inst_synchrnzr0/sreg_reg[0]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            Inst_synchrnzr0/SYNC_OUT_reg_srl2/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.339ns  (logic 0.141ns (41.628%)  route 0.198ns (58.372%))
-  Logic Levels:           1  (FDRE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X0Y85          FDRE                         0.000     0.000 r  Inst_synchrnzr0/sreg_reg[0]/C
-    SLICE_X0Y85          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_synchrnzr0/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.198     0.339    Inst_synchrnzr0/sreg_reg_n_0_[0]
-    SLICE_X2Y81          SRL16E                                       r  Inst_synchrnzr0/SYNC_OUT_reg_srl2/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Inst_fmsElevator/flagdown_reg/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            Inst_fmsElevator/flag2_reg/CLR
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.350ns  (logic 0.164ns (46.853%)  route 0.186ns (53.147%))
-  Logic Levels:           1  (FDRE=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X2Y78          FDRE                         0.000     0.000 r  Inst_fmsElevator/flagdown_reg/C
-    SLICE_X2Y78          FDRE (Prop_fdre_C_Q)         0.164     0.164 f  Inst_fmsElevator/flagdown_reg/Q
-                         net (fo=5, routed)           0.186     0.350    Inst_fmsElevator/flagdown_reg_n_0
-    SLICE_X1Y78          LDCE                                         f  Inst_fmsElevator/flag2_reg/CLR
+    SLICE_X0Y76          FDRE                         0.000     0.000 r  Inst_edgedtctr2/sreg_reg[1]/C
+    SLICE_X0Y76          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_edgedtctr2/sreg_reg[1]/Q
+                         net (fo=2, routed)           0.185     0.326    Inst_edgedtctr2/sreg[1]
+    SLICE_X0Y76          FDRE                                         r  Inst_edgedtctr2/sreg_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -584,68 +670,68 @@ Slack:                    inf
   Destination:            Inst_edgedtctr3/sreg_reg[2]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.353ns  (logic 0.141ns (39.953%)  route 0.212ns (60.047%))
+  Data Path Delay:        0.326ns  (logic 0.141ns (43.258%)  route 0.185ns (56.742%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y78          FDRE                         0.000     0.000 r  Inst_edgedtctr3/sreg_reg[1]/C
-    SLICE_X3Y78          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_edgedtctr3/sreg_reg[1]/Q
-                         net (fo=2, routed)           0.212     0.353    Inst_edgedtctr3/sreg[1]
-    SLICE_X3Y78          FDRE                                         r  Inst_edgedtctr3/sreg_reg[2]/D
+    SLICE_X4Y77          FDRE                         0.000     0.000 r  Inst_edgedtctr3/sreg_reg[1]/C
+    SLICE_X4Y77          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_edgedtctr3/sreg_reg[1]/Q
+                         net (fo=2, routed)           0.185     0.326    Inst_edgedtctr3/sreg[1]
+    SLICE_X4Y77          FDRE                                         r  Inst_edgedtctr3/sreg_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 Inst_fmsElevator/FSM_sequential_current_state_reg[1]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            Inst_fmsElevator/FSM_sequential_current_state_reg[2]/D
+  Destination:            Inst_fmsElevator/FSM_sequential_current_state_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.353ns  (logic 0.186ns (52.650%)  route 0.167ns (47.350%))
-  Logic Levels:           2  (FDCE=1 LUT6=1)
+  Data Path Delay:        0.342ns  (logic 0.186ns (54.462%)  route 0.156ns (45.538%))
+  Logic Levels:           2  (FDCE=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y77          FDCE                         0.000     0.000 r  Inst_fmsElevator/FSM_sequential_current_state_reg[1]/C
-    SLICE_X1Y77          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  Inst_fmsElevator/FSM_sequential_current_state_reg[1]/Q
-                         net (fo=14, routed)          0.167     0.308    Inst_fmsElevator/current_state[1]
-    SLICE_X1Y76          LUT6 (Prop_lut6_I1_O)        0.045     0.353 r  Inst_fmsElevator/FSM_sequential_current_state[2]_i_1/O
-                         net (fo=1, routed)           0.000     0.353    Inst_fmsElevator/current_state__0[2]
-    SLICE_X1Y76          FDCE                                         r  Inst_fmsElevator/FSM_sequential_current_state_reg[2]/D
+    SLICE_X3Y75          FDCE                         0.000     0.000 r  Inst_fmsElevator/FSM_sequential_current_state_reg[1]/C
+    SLICE_X3Y75          FDCE (Prop_fdce_C_Q)         0.141     0.141 f  Inst_fmsElevator/FSM_sequential_current_state_reg[1]/Q
+                         net (fo=26, routed)          0.156     0.297    Inst_fmsElevator/current_state[1]
+    SLICE_X3Y75          LUT5 (Prop_lut5_I4_O)        0.045     0.342 r  Inst_fmsElevator/FSM_sequential_current_state[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.342    Inst_fmsElevator/current_state__0[1]
+    SLICE_X3Y75          FDCE                                         r  Inst_fmsElevator/FSM_sequential_current_state_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_fmsElevator/flagdown_reg/C
+  Source:                 Inst_synchrnzr3/sreg_reg[0]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            Inst_fmsElevator/flag3_reg/CLR
+  Destination:            Inst_synchrnzr3/SYNC_OUT_reg_srl2/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.354ns  (logic 0.164ns (46.277%)  route 0.190ns (53.723%))
+  Data Path Delay:        0.342ns  (logic 0.141ns (41.226%)  route 0.201ns (58.774%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X2Y78          FDRE                         0.000     0.000 r  Inst_fmsElevator/flagdown_reg/C
-    SLICE_X2Y78          FDRE (Prop_fdre_C_Q)         0.164     0.164 f  Inst_fmsElevator/flagdown_reg/Q
-                         net (fo=5, routed)           0.190     0.354    Inst_fmsElevator/flagdown_reg_n_0
-    SLICE_X0Y78          LDCE                                         f  Inst_fmsElevator/flag3_reg/CLR
+    SLICE_X3Y76          FDRE                         0.000     0.000 r  Inst_synchrnzr3/sreg_reg[0]/C
+    SLICE_X3Y76          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_synchrnzr3/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.201     0.342    Inst_synchrnzr3/sreg_reg_n_0_[0]
+    SLICE_X2Y76          SRL16E                                       r  Inst_synchrnzr3/SYNC_OUT_reg_srl2/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Inst_synchrnzr2/sreg_reg[0]/C
+  Source:                 Inst_fmsElevator/resetTempo_reg/C
                             (rising edge-triggered cell FDRE)
-  Destination:            Inst_synchrnzr2/SYNC_OUT_reg_srl2/D
+  Destination:            Inst_fmsElevator/Inst_Temporizador/count_reg[24]/CLR
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.361ns  (logic 0.128ns (35.458%)  route 0.233ns (64.542%))
+  Data Path Delay:        0.345ns  (logic 0.164ns (47.516%)  route 0.181ns (52.484%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y78          FDRE                         0.000     0.000 r  Inst_synchrnzr2/sreg_reg[0]/C
-    SLICE_X3Y78          FDRE (Prop_fdre_C_Q)         0.128     0.128 r  Inst_synchrnzr2/sreg_reg[0]/Q
-                         net (fo=1, routed)           0.233     0.361    Inst_synchrnzr2/sreg_reg_n_0_[0]
-    SLICE_X2Y75          SRL16E                                       r  Inst_synchrnzr2/SYNC_OUT_reg_srl2/D
+    SLICE_X2Y73          FDRE                         0.000     0.000 r  Inst_fmsElevator/resetTempo_reg/C
+    SLICE_X2Y73          FDRE (Prop_fdre_C_Q)         0.164     0.164 f  Inst_fmsElevator/resetTempo_reg/Q
+                         net (fo=34, routed)          0.181     0.345    Inst_fmsElevator/Inst_Temporizador/clear
+    SLICE_X0Y74          FDCE                                         f  Inst_fmsElevator/Inst_Temporizador/count_reg[24]/CLR
   -------------------------------------------------------------------    -------------------
 
 
