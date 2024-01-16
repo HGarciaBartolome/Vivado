@@ -18,10 +18,11 @@ component Top is
         MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
         DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
         EMER_LED : OUT std_logic;
+        PISOACT: in std_logic_vector(3 DOWNTO 0);
         ---Apartir de aqui hay tests
         EDGES_SAL: out std_logic_vector (3 DOWNTO 0);
-        Pisoactsal: out integer;
-        Pisoobjsal: out integer
+--        Pisoactsal: out integer;
+        Pisoobjsal: out std_logic_vector (3 DOWNTO 0)
     );
 end component Top;
 signal Reset: std_logic := '0';
@@ -33,8 +34,8 @@ signal Motors: std_logic_vector(1 downto 0):= "00";
 signal Doors : std_logic := '0';
 signal Led_Emer:std_logic := '0';
 signal EDGES_SAL: std_logic_vector( 3 DOWNTO 0):= "0000";
-signal Pisoactsal: integer;
-signal Pisoobjsal: integer;
+signal PISOACT: std_logic_vector(3 DOWNTO 0) := "0001";
+signal Pisoobjsal: std_logic_vector (3 DOWNTO 0);
 begin
 Instacia:component top
     port map(
@@ -47,11 +48,47 @@ Instacia:component top
         DOORS => Doors,
         EMER_LED => Led_Emer,
         EDGES_SAL => EDGES_SAL,
-        Pisoactsal => Pisoactsal,
-        Pisoobjsal => Pisoobjsal
+        PISOACT => PISOACT,
+        Pisoobjsal=> Pisoobjsal
        );
 
 Reloj: CLK <= not CLK after 5ns;
+
+Piso1:process
+begin
+    wait for 50ns;
+    PISOACT(0) <='1';
+    wait for 10ns;
+    PISOACT(0) <='0';
+    wait for 140ns;
+end process;
+
+Piso2:process
+begin
+    wait for 60ns;
+    PISOACT(1) <='1';
+    wait for 10ns;
+    PISOACT(1) <='0';
+    wait for 130ns;
+end process;
+
+Piso3:process
+begin
+    wait for 70ns;
+    PISOACT(2) <='1';
+    wait for 10ns;
+    PISOACT(2) <='0';
+    wait for 120ns;
+end process;
+
+Piso4:process
+begin
+    wait for 80ns;
+    PISOACT(3) <='1';
+    wait for 10ns;
+    PISOACT(3) <='0';
+    wait for 110ns;
+end process;
 
 STIM: process
 begin

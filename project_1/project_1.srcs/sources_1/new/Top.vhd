@@ -3,6 +3,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Top is
  PORT ( 
+ --TestBench
+ --Pisoobjsal: out std_logic_vector(3 DOWNTO 0);
+ --EDGES_SAL: out std_logic_vector(3 downto 0);
+ --Real
  RESET: in std_logic;
  Button: in std_logic_vector(3 DOWNTO 0);
  CLK : in std_logic;
@@ -11,7 +15,8 @@ entity Top is
  MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
  DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
  EMER_LED : OUT std_logic;
- EDGES_SAL: out std_logic_vector(3 downto 0)
+ 
+ PISOACT: in std_logic_vector(3 DOWNTO 0)
  --Pisoactsal: out integer;
  --Pisoobjsal: out integer
  );
@@ -36,6 +41,10 @@ COMPONENT EDGEDTCTR
 END COMPONENT;
 COMPONENT FMS_Elevator
  port (
+ --TestBench
+ --Pisoobjsal: out std_logic_vector(3 DOWNTO 0);
+ 
+ --Real
  RESET: in std_logic;
  CLK : in std_logic;
  EDGE : in std_logic_vector(3 DOWNTO 0);
@@ -43,6 +52,7 @@ COMPONENT FMS_Elevator
  DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
  LED_Floor: out std_logic_vector(3 DOWNTO 0);
  LED_EMER: out std_logic;
+ PISOACT: in std_logic_vector(3 DOWNTO 0)
  --Pisoactsal: out integer;
  --Pisoobjsal: out integer
  );
@@ -91,15 +101,18 @@ Inst_synchrnzr3:  SYNCHRNZR port MAP(
  EDGE=>EDGES(3)
 );
 Inst_fmsElevator: FMS_Elevator PORT MAP(
+--TestBench
+  --Pisoobjsal => Pisoobjsal,
+--Real
  RESET => RESET,
  CLK => CLK,
- EDGE => EDGES,
+ EDGE => Button,
  DOORS =>DOORS,
  MOTORS => MOTORS,
  LED_Floor => LED_Floor,
  LED_EMER => EMER_LED,
- --Pisoactsal => Pisoactsal,
- --Pisoobjsal => Pisoobjsal
+ PISOACT => PISOACT
+
 );
-EDGEs_SAL <= EDGES;
+--EDGEs_SAL <= EDGES;
 end Behavioral;

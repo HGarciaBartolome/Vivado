@@ -3,6 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity FMS_Elevator is
  port (
+  
+ --- PARA TESTBENCH
+ --Pisoactsal: out integer;
+-- Pisoobjsal: out std_logic_vector(3 DOWNTO 0);
+ 
+ --Reales
  RESET: in std_logic;
  CLK : in std_logic;
  EDGE : in std_logic_vector(3 DOWNTO 0);
@@ -12,10 +18,7 @@ entity FMS_Elevator is
  LED_EMER: out std_logic;
  PISOACT: in std_logic_vector(3 DOWNTO 0)
  
- 
- --- PARA TESTBENCH
- --Pisoactsal: out integer;
- --Pisoobjsal: out integer
+
  );
 end FMS_Elevator;
 
@@ -23,7 +26,7 @@ architecture Behavioral of FMS_Elevator is
     type STATES is (Arranque,Error,Piso1,Piso2,Piso3,Piso4,S12,S13,S14,B21,S23,S24,B31,B32,S34,B41,B42,B43,Espera);
     signal pisoobjetivo : std_logic_vector(3 Downto 0):="0000";
     signal trabajando: std_logic:='0';
-    signal current_state, next_state: STATES;
+    signal current_state, next_state: STATES:= Arranque;
     signal flagerror : std_logic :='0';
     signal flag1, flag2, flag3, flag4: std_logic :='0';
 begin
@@ -35,76 +38,79 @@ state_register:process(CLK,RESET)
             current_state <= next_state;
         end if;
     end process;
-next_state_decoder: process(EDGE,RESET,current_state,PISOACT)
+next_state_decoder: process(EDGE,RESET,PISOACT)
     begin
     
-        next_state <= current_state;
+        --next_state <= current_state;
 -- Cambio de estados
      case current_state is
         when Arranque =>
-         case PISOACT is
-            when "0001" =>
+            if(PISOACT(0) = '1') then
                 next_state <= Piso1;
-            when "0010" =>
+            elsif(PISOACT(1) = '1') then
                 next_state <= Piso2;
-            when "0100" =>
+            elsif(PISOACT(2) = '1') then
                 next_state <= Piso3;
-            when "1000" =>
+            elsif(PISOACT(3) = '1') then
                 next_state <= Piso4;
-            when others =>
-                next_state <= Error;
-         end case;
+            else 
+                next_state <=Arranque;
+            end if;
+--         case PISOACT is
+--            when "0001" =>
+--                next_state <= Piso1;
+--            when "0010" =>
+--                next_state <= Piso2;
+--            when "0100" =>
+--                next_state <= Piso3;
+--            when "1000" =>
+--                next_state <= Piso4;
+--            when others =>
+--                next_state <= Error;
+--         end case;
         when Piso1 =>
          case pisoobjetivo is
             when "0010" =>
                 next_state <= S12;
-                pisoobjetivo<="0000";
             when "0100" =>
                 next_state <= S13;
-                pisoobjetivo<="0000";
             when "1000" =>
-                next_state <= S14;
-                pisoobjetivo<="0000";      
+                next_state <= S14;    
             when others=>
+                next_state <= Piso1;
          end case;
         when Piso2 =>
          case pisoobjetivo is
             when "0001" =>
                 next_state <= B21;
-                pisoobjetivo<="0000";
             when "0100" =>
                 next_state <= S23;
-                pisoobjetivo<="0000";
             when "1000" =>
-                next_state <= S24;
-                pisoobjetivo<="0000";      
+                next_state <= S24;      
             when others=>
+                next_state <= Piso2;
          end case;
         when Piso3 =>
          case pisoobjetivo is
             when "0001" =>
                 next_state <= B31;
-                pisoobjetivo<="0000";
             when "0010" =>
                 next_state <= B32;
-                pisoobjetivo<="0000";
             when "1000" =>
-                next_state <= S34;
-                pisoobjetivo<="0000";      
+                next_state <= S34;     
             when others=>
+                next_state <= Piso3;
          end case;
         when Piso4 =>
          case pisoobjetivo is
             when "0001" =>
                 next_state <= B41;
-                pisoobjetivo<="0000";
             when "0010" =>
                 next_state <= B42;
-                pisoobjetivo<="0000";
             when "0100" =>
-                next_state <= B43;
-                pisoobjetivo<="0000";      
+                next_state <= B43;     
             when others=>
+                next_state <= Piso4;
          end case;
          
 -- Cambios Piso 1 a otros
@@ -115,6 +121,8 @@ next_state_decoder: process(EDGE,RESET,current_state,PISOACT)
                 flag2<='0';
                 flag3<='0';
                 flag4<='0';
+            else
+             next_state <= S12;
             end if;
         when S13 =>
             if ( flag2<='1' and flag3<='1') then
@@ -123,6 +131,8 @@ next_state_decoder: process(EDGE,RESET,current_state,PISOACT)
                 flag2<='0';
                 flag3<='0';
                 flag4<='0';
+            else
+               next_state <= S13;
             end if;
         when S14 =>
             if ( flag2<='1' and flag3<='1' and flag4<='1') then
@@ -131,6 +141,8 @@ next_state_decoder: process(EDGE,RESET,current_state,PISOACT)
                 flag2<='0';
                 flag3<='0';
                 flag4<='0';
+            else
+                next_state <= S14;
             end if;
          
 -- Cambios Piso 2 a otros
@@ -224,7 +236,7 @@ next_state_decoder: process(EDGE,RESET,current_state,PISOACT)
             when "1000" =>
                 next_state <= Piso4;
             when others =>
-                next_state <= Error;
+                next_state <= Espera;
          end case; 
             
 -- Estado raro = Error     
@@ -235,7 +247,7 @@ next_state_decoder: process(EDGE,RESET,current_state,PISOACT)
       
       
  -- Detecion entradas     
-            case EDGE is
+        case EDGE is
                 when "0001" =>
                    pisoobjetivo<= "0001";
                 when "0010" =>
@@ -254,14 +266,17 @@ output_decod: process(PISOACT,current_state)
             MOTORS(1) <= '0';
             MOTORS(0) <= '0';
             DOORS <= '1';
+            LED_EMER<='0';
         elsif (current_state= S12 or current_state= S13 or current_state= S14 or current_state= S23 or current_state= S24 or current_state= S34) then
             MOTORS(1) <= '0';
             MOTORS(0) <= '1';
             DOORS <= '0';
+            LED_EMER<='0';
         elsif (current_state=B21 or current_state=B31 or current_state=B32 or current_state=B41 or current_state=B42 or current_state=B43 ) then
             MOTORS(1) <= '1';
             MOTORS(0) <= '0';
             DOORS <= '0';
+            LED_EMER<='0';
         elsif (current_state = Error) then
             MOTORS(1) <= '0';
             MOTORS(0) <= '0';
@@ -282,7 +297,7 @@ output_decod: process(PISOACT,current_state)
     end process;
     
 -- Detecion Cambio de Piso
-flags: process (PISOACT)
+flags: process (PISOACT,CLK)
     begin
         if ( rising_edge(PISOACT(0))) then
             flag1 <= '1';
@@ -338,5 +353,5 @@ flags: process (PISOACT)
 -- TestBench
 
 -- Pisoactsal <= pisoactual;
--- Pisoobjsal <= pisoobjetivo;
+ --Pisoobjsal <= pisoobjetivo;
 end Behavioral;
