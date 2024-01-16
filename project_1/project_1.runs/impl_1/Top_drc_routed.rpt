@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Jan 16 11:21:33 2024
+| Date         : Tue Jan 16 13:22:44 2024
 | Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_drc -file Top_drc_routed.rpt -pb Top_drc_routed.pb -rpx Top_drc_routed.rpx
 | Design       : Top
@@ -24,12 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 6
+             Violations found: 14
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 5          |
+| IOSR-1   | Warning  | IOB set reset sharing                               | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 12         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -47,6 +48,18 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
 Refer to the device configuration user guide for more information.
 Related violations: <none>
 
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO RESET connects to flops which have these Inst_fmsElevator/pisoobjetivo_reg[0]_LDC_i_1_n_0,
+Inst_fmsElevator/pisoobjetivo_reg[0]_LDC_i_2_n_0,
+Inst_fmsElevator/pisoobjetivo_reg[1]_LDC_i_1_n_0,
+Inst_fmsElevator/pisoobjetivo_reg[1]_LDC_i_2_n_0,
+Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_i_1_n_0,
+Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_i_2_n_0,
+Inst_fmsElevator/pisoobjetivo_reg[3]_LDC_i_1_n_0
+Inst_fmsElevator/pisoobjetivo_reg[3]_LDC_i_2_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
 PDRC-153#1 Warning
 Gated clock check  
 Net Inst_fmsElevator/DOORS_reg/G0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/DOORS_reg/L3_2/O, cell Inst_fmsElevator/DOORS_reg/L3_2 (in Inst_fmsElevator/DOORS_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
@@ -54,12 +67,12 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net Inst_fmsElevator/DOORS_reg_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/DOORS_reg_i_1/O, cell Inst_fmsElevator/DOORS_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Inst_fmsElevator/LED_Floor_reg[3]_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/LED_Floor_reg[3]_i_1/O, cell Inst_fmsElevator/LED_Floor_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net Inst_fmsElevator/LED_Floor_reg[3]_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/LED_Floor_reg[3]_i_1/O, cell Inst_fmsElevator/LED_Floor_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Inst_fmsElevator/MOTORS0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/DOORS_reg_i_1/O, cell Inst_fmsElevator/DOORS_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
@@ -69,7 +82,42 @@ Related violations: <none>
 
 PDRC-153#5 Warning
 Gated clock check  
-Net Inst_fmsElevator/pisoobjetivo_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/pisoobjetivo_reg[3]_i_2/O, cell Inst_fmsElevator/pisoobjetivo_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Inst_fmsElevator/flag1_reg_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/flag1_reg_i_1/O, cell Inst_fmsElevator/flag1_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Inst_fmsElevator/flag2_reg_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/flag2_reg_i_1/O, cell Inst_fmsElevator/flag2_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Inst_fmsElevator/flag3_reg_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/flag3_reg_i_1/O, cell Inst_fmsElevator/flag3_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Inst_fmsElevator/flag4_reg_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/flag4_reg_i_1/O, cell Inst_fmsElevator/flag4_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Inst_fmsElevator/pisoobjetivo_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/pisoobjetivo_reg[0]_LDC_i_1/O, cell Inst_fmsElevator/pisoobjetivo_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net Inst_fmsElevator/pisoobjetivo_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/pisoobjetivo_reg[1]_LDC_i_1/O, cell Inst_fmsElevator/pisoobjetivo_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_i_1/O, cell Inst_fmsElevator/pisoobjetivo_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net Inst_fmsElevator/pisoobjetivo_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fmsElevator/pisoobjetivo_reg[3]_LDC_i_1/O, cell Inst_fmsElevator/pisoobjetivo_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

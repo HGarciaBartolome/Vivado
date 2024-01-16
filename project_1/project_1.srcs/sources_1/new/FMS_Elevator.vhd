@@ -26,201 +26,174 @@ architecture Behavioral of FMS_Elevator is
     type STATES is (Arranque,Error,Piso1,Piso2,Piso3,Piso4,S12,S13,S14,B21,S23,S24,B31,B32,S34,B41,B42,B43,Espera);
     signal pisoobjetivo : std_logic_vector(3 Downto 0):="0000";
     signal trabajando: std_logic:='0';
-    signal current_state, next_state: STATES:= Arranque;
+    signal current_state: STATES:= Arranque;
     signal flagerror : std_logic :='0';
     signal flag1, flag2, flag3, flag4: std_logic :='0';
+    signal flagdown: std_logic:= '1';
 begin
-state_register:process(CLK,RESET)
-    begin
-        if (RESET = '1') then
-            current_state <= Arranque;
-        elsif (rising_edge(CLK)) then
-            current_state <= next_state;
-        end if;
-    end process;
-next_state_decoder: process(EDGE,RESET,PISOACT)
+
+state_decoder: process(EDGE,CLK,RESET,current_state)
     begin
     
-        --next_state <= current_state;
+        --current_state <= current_state;
 -- Cambio de estados
+    if (RESET = '1') then
+            current_state <= Arranque;
+   elsif (rising_edge(CLK)) then
      case current_state is
         when Arranque =>
-            if(PISOACT(0) = '1') then
-                next_state <= Piso1;
-            elsif(PISOACT(1) = '1') then
-                next_state <= Piso2;
-            elsif(PISOACT(2) = '1') then
-                next_state <= Piso3;
-            elsif(PISOACT(3) = '1') then
-                next_state <= Piso4;
-            else 
-                next_state <=Arranque;
-            end if;
+            case PISOACT is
+            when "0001" =>
+                current_state <= Piso1;
+            when "0010" =>
+                current_state <= Piso2;
+            when "0100" =>
+                current_state <= Piso3;
+            when "1000" =>
+                current_state <= Piso4;
+            when others =>
+                current_state <= Arranque;
+            end case;
 --         case PISOACT is
 --            when "0001" =>
---                next_state <= Piso1;
+--                current_state <= Piso1;
 --            when "0010" =>
---                next_state <= Piso2;
+--                current_state <= Piso2;
 --            when "0100" =>
---                next_state <= Piso3;
+--                current_state <= Piso3;
 --            when "1000" =>
---                next_state <= Piso4;
+--                current_state <= Piso4;
 --            when others =>
---                next_state <= Error;
+--                current_state <= Error;
 --         end case;
         when Piso1 =>
          case pisoobjetivo is
             when "0010" =>
-                next_state <= S12;
+                current_state <= S12;
             when "0100" =>
-                next_state <= S13;
+                current_state <= S13;
             when "1000" =>
-                next_state <= S14;    
+                current_state <= S14;   
             when others=>
-                next_state <= Piso1;
+                current_state <= Piso1;
          end case;
         when Piso2 =>
          case pisoobjetivo is
             when "0001" =>
-                next_state <= B21;
+                current_state <= B21;
             when "0100" =>
-                next_state <= S23;
+                current_state <= S23;
             when "1000" =>
-                next_state <= S24;      
+                current_state <= S24;
             when others=>
-                next_state <= Piso2;
+                current_state <= Piso2;
          end case;
         when Piso3 =>
          case pisoobjetivo is
             when "0001" =>
-                next_state <= B31;
+                current_state <= B31;
             when "0010" =>
-                next_state <= B32;
+                current_state <= B32;
             when "1000" =>
-                next_state <= S34;     
+                current_state <= S34;
             when others=>
-                next_state <= Piso3;
+                current_state <= Piso3;
          end case;
         when Piso4 =>
          case pisoobjetivo is
             when "0001" =>
-                next_state <= B41;
+                current_state <= B41;
             when "0010" =>
-                next_state <= B42;
+                current_state <= B42;
             when "0100" =>
-                next_state <= B43;     
+                current_state <= B43;  
             when others=>
-                next_state <= Piso4;
+                current_state <= Piso4;
          end case;
          
 -- Cambios Piso 1 a otros
         when S12 =>
-            if ( flag2<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag2='1') then
+                current_state<= Espera;
+                flagdown<='1';
             else
-             next_state <= S12;
+             current_state <= S12;
             end if;
         when S13 =>
-            if ( flag2<='1' and flag3<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag2='1' and flag3='1') then
+                current_state<= Espera;
+                flagdown<='1';
             else
-               next_state <= S13;
+               current_state <= S13;
             end if;
         when S14 =>
-            if ( flag2<='1' and flag3<='1' and flag4<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag2='1' and flag3='1' and flag4='1') then
+                current_state<= Espera;
+                flagdown<='1';
             else
-                next_state <= S14;
+                current_state <= S14;
             end if;
          
 -- Cambios Piso 2 a otros
         when B21 =>
-            if ( flag1<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag1='1') then
+                current_state<= Espera;
             end if;
         when S23 =>
-            if ( flag3<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag3='1') then
+                current_state<= Espera;
+                flagdown<='1';
             end if;
         when S24 =>
-            if ( flag3<='1' and flag4<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag3='1' and flag4='1') then
+                current_state<= Espera;
+                flagdown<='1';
             end if;
          
 -- Cambios Piso 3 a otros
         when B31 =>
-            if ( flag2<='1' and flag3 <= '1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag2='1' and flag3 = '1') then
+                current_state<= Espera;
+                flagdown<='1';
             end if;
         when B32 =>
-            if ( flag2<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag2='1') then
+                current_state<= Espera;
+                flagdown<='1';
             end if;
         when S34 =>
-            if ( flag4<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag4='1') then
+                current_state<= Espera;
+                flagdown<='1';
             end if; 
          
 -- Cambios Piso 4 a otros
         when B41 =>
-            if ( flag2<='1' and flag3<='1' and flag1<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag2='1' and flag3='1' and flag1='1') then
+                current_state<= Espera;
+                flagdown<='1';                
             end if;
         when B42 =>
-            if ( flag2<='1' and flag3<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if ( flag2='1' and flag3='1') then
+                current_state<= Espera;
+                flagdown<='1';
             end if;
         when B43 =>
-            if (flag3<='1') then
-                next_state<= Espera;
-                flag1<='0';
-                flag2<='0';
-                flag3<='0';
-                flag4<='0';
+            flagdown<='0';
+            if (flag3='1') then
+                current_state<= Espera;
+                flagdown<='1';
             end if;
             
 -- Asegurarse que limpia la barra de tarreas
@@ -228,23 +201,23 @@ next_state_decoder: process(EDGE,RESET,PISOACT)
             pisoobjetivo<= "0000";
             case PISOACT is
             when "0001" =>
-                next_state <= Piso1;
+                current_state <= Piso1;
             when "0010" =>
-                next_state <= Piso2;
+                current_state <= Piso2;
             when "0100" =>
-                next_state <= Piso3;
+                current_state <= Piso3;
             when "1000" =>
-                next_state <= Piso4;
+                current_state <= Piso4;
             when others =>
-                next_state <= Espera;
+                current_state <= Espera;
          end case; 
             
 -- Estado raro = Error     
         when others =>
-            next_state <= Error;
-      end case;
+            current_state <= Error;
+        end case;
       
-      
+       end if;
       
  -- Detecion entradas     
         case EDGE is
@@ -277,7 +250,7 @@ output_decod: process(PISOACT,current_state)
             MOTORS(0) <= '0';
             DOORS <= '0';
             LED_EMER<='0';
-        elsif (current_state = Error) then
+        elsif (current_state = Error or current_state = Espera) then
             MOTORS(1) <= '0';
             MOTORS(0) <= '0';
             DOORS<= '0';
@@ -297,20 +270,30 @@ output_decod: process(PISOACT,current_state)
     end process;
     
 -- Detecion Cambio de Piso
-flags: process (PISOACT,CLK)
+flags: process (PISOACT,CLK,flagdown)
     begin
-        if ( rising_edge(PISOACT(0))) then
-            flag1 <= '1';
-        end if;
-        if (rising_edge(PISOACT(1))) then
-            flag2 <= '1';
-        end if;
-        if ( rising_edge(PISOACT(2))) then
-            flag3 <= '1';
-        end if;
-        if ( rising_edge(PISOACT(3))) then
-            flag4 <= '1';
-        end if;
+        if(flagdown = '1') then
+            flag1<='0';
+            flag2<='0';
+            flag3<='0';
+            flag4<='0';
+        else
+           case PISOACT is
+            when "0001" =>
+                flag1 <= '1';
+            when "0010" =>
+                flag2 <= '1';
+            when "0100" =>
+                flag3 <= '1';
+            when "1000" =>
+                flag4 <= '1';
+            when others =>
+                flag1<=flag1;
+                flag2<=flag2;
+                flag3<=flag3;
+                flag4<=flag4;
+            end case;
+       end if;
     end process;
 --error_detect: process(PISOACT,pisoobjetivo,current_state) --comprobación de error en la situación actual del ascensor, si baja más de lo que debería o si sube más de lo debido
 --    begin
