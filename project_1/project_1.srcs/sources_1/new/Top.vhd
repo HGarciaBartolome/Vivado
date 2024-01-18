@@ -3,9 +3,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Top is
  PORT ( 
- --TestBench
- --Pisoobjsal: out std_logic_vector(3 DOWNTO 0);
- --EDGES_SAL: out std_logic_vector(3 downto 0);
  --Real
  RESET: in std_logic;
  Button: in std_logic_vector(3 DOWNTO 0);
@@ -20,8 +17,6 @@ entity Top is
  LEDEspera:out std_logic;
  PISOACT: in std_logic_vector(3 DOWNTO 0)
 
- --Pisoactsal: out integer;
- --Pisoobjsal: out integer
  );
 end Top;
 
@@ -113,16 +108,14 @@ Inst_synchrnzr3:  SYNCHRNZR port MAP(
  EDGE=>EDGES(3)
 );
 Inst_fmsElevator: FMS_Elevator PORT MAP(
---TestBench
+
  Pisoobjsal => Pisoobjsal,
---Real
  RESET => RESET,
  CLK => CLK,
  EDGE => EDGES,
  DOORS =>DOORS,
  MOTORS => MOTORS,
  LEDEspera => LEDEspera,
- --LED_Floor => LED_Floor,
  LED_EMER => EMER_LED,
  PISOACT => PISOACT
 
@@ -133,6 +126,8 @@ Inst_decoderPiso: decoder PORT MAP(
 );
 
 LED_Piso <= PISOACT;
+
+-- Conversor de Piso objetivo a  BCD para el decoder, si no hay piso actual se pone a 7
 in_a_bcd:process(Pisoobjsal)
 begin
         Dig_select<= "11111110";
@@ -149,5 +144,4 @@ begin
             pisobcd <="0111";
         end case;
 end process;
---EDGEs_SAL <= EDGES;
 end Behavioral;

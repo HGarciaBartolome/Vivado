@@ -4,20 +4,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity FMS_Elevator is
  port (
   
- --- PARA TESTBENCH
- --Pisoactsal: out integer;
- Pisoobjsal: out std_logic_vector(3 DOWNTO 0);
  
  --Reales
- RESET: in std_logic;
- CLK : in std_logic;
- EDGE : in std_logic_vector(3 DOWNTO 0);
+ Pisoobjsal: out std_logic_vector(3 DOWNTO 0);
+ RESET: in std_logic;-- Reset
+ CLK : in std_logic;-- Reloj
+ EDGE : in std_logic_vector(3 DOWNTO 0);-- Entrada flanco bajada botones
  MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
  DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
- LEDEspera:out std_logic;
- --LED_Floor: out std_logic_vector(3 DOWNTO 0);
- LED_EMER: out std_logic;
- PISOACT: in std_logic_vector(3 DOWNTO 0)
+ LEDEspera:out std_logic;-- LED que indica que el sistema esta esperando
+ LED_EMER: out std_logic;-- LED que indica que el sistema esta en error
+ PISOACT: in std_logic_vector(3 DOWNTO 0)-- Detecion de Piso actual, puede ser mediante puertas laser o similar.
  
 
  );
@@ -54,12 +51,11 @@ PORT MAP(
 
 state_decoder: process(EDGE,CLK,RESET,current_state)
     begin
-    
-        --current_state <= current_state;
 -- Cambio de estados
-    if (RESET = '1') then
-            current_state <= Arranque;
+   if (RESET = '1') then
+       current_state <= Arranque;
    elsif (rising_edge(CLK)) then
+   -- Estado de Arranque, se debe introducir el piso actual.
      case current_state is
         when Arranque =>
             case PISOACT is
@@ -74,6 +70,7 @@ state_decoder: process(EDGE,CLK,RESET,current_state)
             when others =>
                 current_state <= Arranque;
             end case;
+    -- Estado del Primer piso, puede ir a los estados de moviemto a otros pisos
         when Piso1 =>
          case pisoobjetivo is
             when "0010" =>
@@ -85,6 +82,7 @@ state_decoder: process(EDGE,CLK,RESET,current_state)
             when others=>
                 current_state <= Piso1;
          end case;
+ -- Estado del Segundo piso, puede ir a los estados de moviemto a otros pisos        
         when Piso2 =>
          case pisoobjetivo is
             when "0001" =>
@@ -96,6 +94,7 @@ state_decoder: process(EDGE,CLK,RESET,current_state)
             when others=>
                 current_state <= Piso2;
          end case;
+    -- Estado del Tercer piso, puede ir a los estados de moviemto a otros pisos
         when Piso3 =>
          case pisoobjetivo is
             when "0001" =>
@@ -107,6 +106,7 @@ state_decoder: process(EDGE,CLK,RESET,current_state)
             when others=>
                 current_state <= Piso3;
          end case;
+    -- Estado del Cuarto piso, puede ir a los estados de moviemto a otros pisos
         when Piso4 =>
          case pisoobjetivo is
             when "0001" =>
@@ -204,7 +204,7 @@ state_decoder: process(EDGE,CLK,RESET,current_state)
                 flagdown<='1';
             end if;
             
--- Asegurarse que limpia la barra de tarreas
+-- Estado limpia los pisos objetivos y espera un tiempo antes de recibir otros comandos.
         when Espera =>
             pisoobjetivo<= "0000";
             if( SalTempo = '1') then
@@ -230,29 +230,30 @@ state_decoder: process(EDGE,CLK,RESET,current_state)
             end if;
           
             
--- Estado raro = Error     
+-- Estado no esperado --> Error, para salir hay que reiniciar  
         when others =>
             current_state <= Error;
         end case;
+   
+   end if;
       
-       end if;
-      
- -- Detecion entradas     
+ -- Detecion entradas   
         case EDGE is
-                when "0001" =>
-                   pisoobjetivo<= "0001";
-                when "0010" =>
-                   pisoobjetivo<="0010";
-                when "0100" =>
-                   pisoobjetivo<= "0100";
-                when "1000" =>
-                   pisoobjetivo<= "1000";
-                when others =>
-            end case;
-
+            when "0001" =>
+               pisoobjetivo<= "0001";
+            when "0010" => 
+               pisoobjetivo<="0010";
+            when "0100" =>
+               pisoobjetivo<= "0100";
+            when "1000" =>
+                pisoobjetivo<= "1000";
+            when others =>
+        end case;
     end process;
+
 output_decod: process(PISOACT,current_state)
     begin
+        --Salidas
         if (current_state = Piso1 or current_state= Piso2 or current_state= Piso3 or current_state= Piso4  ) then
             MOTORS(1) <= '0';
             MOTORS(0) <= '0';
@@ -286,7 +287,7 @@ output_decod: process(PISOACT,current_state)
         end if;
     end process;
     
--- Detecion Cambio de Piso
+-- Detecion Cambio de Piso mediante el uso de flags.
 flags: process (PISOACT,CLK,flagdown)
     begin
         if(flagdown = '1') then

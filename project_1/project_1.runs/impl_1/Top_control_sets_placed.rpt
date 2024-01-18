@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Jan 16 17:13:42 2024
+| Date         : Thu Jan 18 15:56:48 2024
 | Host         : LAPTOP-ITU9JLQJ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -74,26 +74,26 @@ Table of Contents
 |                      Clock Signal                      |               Enable Signal               |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------------------------------------------+-------------------------------------------+----------------------------------------+------------------+----------------+--------------+
 |  Inst_fmsElevator/DOORS_reg/G0                         |                                           |                                        |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/MOTORS_reg[0]_i_2_n_0                |                                           | Inst_fmsElevator/MOTORS1               |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/MOTORS_reg[1]_i_2_n_0                |                                           | Inst_fmsElevator/MOTORS_reg[1]_i_3_n_0 |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/DOORS_reg_i_1_n_0                    |                                           | Inst_fmsElevator/LEDEspera_reg_i_1_n_0 |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/flag4_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/flag3_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/flag1_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
-|  Inst_fmsElevator/flag2_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_0          |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_3          |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_2          |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_2          |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_0          |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_1          |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_3          |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_1          |                1 |              1 |         1.00 |
 |  Inst_edgedtctr0/sreg_reg[2]_3                         |                                           | Inst_edgedtctr0/sreg_reg[1]_3          |                1 |              1 |         1.00 |
-|  Inst_edgedtctr0/sreg_reg[2]_2                         |                                           | Inst_edgedtctr0/sreg_reg[1]_2          |                1 |              1 |         1.00 |
 |  Inst_edgedtctr0/sreg_reg[2]_0                         |                                           | Inst_edgedtctr0/sreg_reg[1]_0          |                1 |              1 |         1.00 |
 |  Inst_edgedtctr0/sreg_reg[2]_1                         |                                           | Inst_edgedtctr0/sreg_reg[1]_1          |                1 |              1 |         1.00 |
+|  Inst_edgedtctr0/sreg_reg[2]_2                         |                                           | Inst_edgedtctr0/sreg_reg[1]_2          |                1 |              1 |         1.00 |
 |  Inst_fmsElevator/Inst_Temporizador/Output_reg_i_1_n_0 |                                           | Inst_fmsElevator/resetTempo_reg_n_0    |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/DOORS_reg_i_1_n_0                    |                                           | Inst_fmsElevator/LEDEspera_reg_i_1_n_0 |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/flag3_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/MOTORS_reg[0]_i_2_n_0                |                                           | Inst_fmsElevator/MOTORS1               |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/flag2_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/flag4_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/MOTORS_reg[1]_i_2_n_0                |                                           | Inst_fmsElevator/MOTORS_reg[1]_i_3_n_0 |                1 |              1 |         1.00 |
+|  Inst_fmsElevator/flag1_reg_i_1_n_0                    |                                           | Inst_fmsElevator/flagdown_reg_n_0      |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_0          |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_3          |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_0          |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_1          |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_2          |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_1          |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[1]_3          |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                         | Inst_fmsElevator/pisoobjetivo0            | Inst_edgedtctr0/sreg_reg[2]_2          |                1 |              1 |         1.00 |
 |  CLK_IBUF_BUFG                                         | Inst_fmsElevator/Inst_Temporizador/E[0]   | RESET_IBUF                             |                3 |              5 |         1.67 |
 |  CLK_IBUF_BUFG                                         |                                           |                                        |               10 |             23 |         2.30 |
 |  CLK_IBUF_BUFG                                         | Inst_fmsElevator/Inst_Temporizador/count0 | Inst_fmsElevator/resetTempo_reg_n_0    |                8 |             32 |         4.00 |
