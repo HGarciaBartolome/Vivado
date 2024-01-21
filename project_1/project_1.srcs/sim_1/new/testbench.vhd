@@ -1,122 +1,93 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.std_logic_arith.all;
-use IEEE.std_logic_unsigned .all;
+library ieee;
+use ieee.std_logic_1164.all;
 
-entity testbench is
---  Port ( );
-end testbench;
+entity tb_Top is
+end tb_Top;
 
-architecture Behavioral of testbench is
-component Top is
-    port(
-        RESET: in std_logic;
-        Button: in std_logic_vector(3 DOWNTO 0);
-        CLK : in std_logic;
-        EMER : in std_logic;
-        LED_Floor : OUT std_logic_vector(3 DOWNTO 0);
-        MOTORS: OUT std_logic_vector (1 DOWNTO 0); -- 00 stdby 01 Up 10 Down 11 ERROR
-        DOORS: OUT std_logic;  -- 1 Abierto 0 Cerrados
-        EMER_LED : OUT std_logic;
-        PISOACT: in std_logic_vector(3 DOWNTO 0);
-        ---Apartir de aqui hay tests
-        EDGES_SAL: out std_logic_vector (3 DOWNTO 0);
---        Pisoactsal: out integer;
-        Pisoobjsal: out std_logic_vector (3 DOWNTO 0)
-    );
-end component Top;
-signal Reset: std_logic := '0';
-signal Button: std_logic_vector(3 Downto 0) := "0000";
-signal CLK: std_logic := '0';
-signal Emer: std_logic := '0';
-signal Piso: std_logic_vector(3 downto 0):= "0000";
-signal Motors: std_logic_vector(1 downto 0):= "00";
-signal Doors : std_logic := '0';
-signal Led_Emer:std_logic := '0';
-signal EDGES_SAL: std_logic_vector( 3 DOWNTO 0):= "0000";
-signal PISOACT: std_logic_vector(3 DOWNTO 0) := "0001";
-signal Pisoobjsal: std_logic_vector (3 DOWNTO 0);
+architecture tb of tb_Top is
+
+    component Top
+        port (RESET      : in std_logic;
+              Button     : in std_logic_vector (3 downto 0);
+              CLK        : in std_logic;
+              EMER       : in std_logic;
+              BCD_Floor  : out std_logic_vector (6 downto 0);
+              Dig_select : out std_logic_vector (7 downto 0);
+              MOTORS     : out std_logic_vector (1 downto 0);
+              DOORS      : out std_logic;
+              EMER_LED   : out std_logic;
+              LED_Piso   : out std_logic_vector (3 downto 0);
+              LEDEspera  : out std_logic;
+              PISOACT    : in std_logic_vector (3 downto 0));
+    end component;
+
+    signal RESET      : std_logic;
+    signal Button     : std_logic_vector (3 downto 0):="0000";
+    signal CLK        : std_logic;
+    signal EMER       : std_logic;
+    signal BCD_Floor  : std_logic_vector (6 downto 0);
+    signal Dig_select : std_logic_vector (7 downto 0);
+    signal MOTORS     : std_logic_vector (1 downto 0);
+    signal DOORS      : std_logic;
+    signal EMER_LED   : std_logic;
+    signal LED_Piso   : std_logic_vector (3 downto 0);
+    signal LEDEspera  : std_logic;
+    signal PISOACT    : std_logic_vector (3 downto 0):="0000";
+
+    constant TbPeriod : time := 1000 ps; -- EDIT Put right period here
+    signal TbClock : std_logic := '0';
+    signal TbSimEnded : std_logic := '0';
+
 begin
-Instacia:component top
-    port map(
-        RESET => Reset,
-        Button => Button,
-        CLK => CLK,
-        EMER => Emer,
-        LED_Floor => Piso,
-        MOTORS => Motors,
-        DOORS => Doors,
-        EMER_LED => Led_Emer,
-        EDGES_SAL => EDGES_SAL,
-        PISOACT => PISOACT,
-        Pisoobjsal=> Pisoobjsal
-       );
 
-Reloj: CLK <= not CLK after 5ns;
+    dut : Top
+    port map (RESET      => RESET,
+              Button     => Button,
+              CLK        => CLK,
+              EMER       => EMER,
+              BCD_Floor  => BCD_Floor,
+              Dig_select => Dig_select,
+              MOTORS     => MOTORS,
+              DOORS      => DOORS,
+              EMER_LED   => EMER_LED,
+              LED_Piso   => LED_Piso,
+              LEDEspera  => LEDEspera,
+              PISOACT    => PISOACT);
 
-Piso1:process
-begin
-    wait for 50ns;
-    PISOACT(0) <='1';
-    wait for 10ns;
-    PISOACT(0) <='0';
-    wait for 140ns;
-end process;
+    -- Clock generation
+    TbClock <= not TbClock after TbPeriod/2 when TbSimEnded /= '1' else '0';
 
-Piso2:process
-begin
-    wait for 60ns;
-    PISOACT(1) <='1';
-    wait for 10ns;
-    PISOACT(1) <='0';
-    wait for 130ns;
-end process;
+    -- EDIT: Check that CLK is really your main clock signal
+    CLK <= TbClock;
 
-Piso3:process
-begin
-    wait for 70ns;
-    PISOACT(2) <='1';
-    wait for 10ns;
-    PISOACT(2) <='0';
-    wait for 120ns;
-end process;
+    stimuli : process
+    begin
+        -- EDIT Adapt initialization as needed
+        RESET <= '0'; 
+        pisoact<=("0001");   
+        wait for 800ps;
+        Button <= ("1000");
+        wait  for 800ps;
+        button <=("0000");
+        wait for 6000ps;
+        pisoact<=("0010");
+        wait for 1800ps;
+        pisoact<=("0100");
+        wait for 1800ps;
+        pisoact<=("1000");
+        -- EDIT Add stimuli here
+        wait for 100 * TbPeriod;
 
-Piso4:process
-begin
-    wait for 80ns;
-    PISOACT(3) <='1';
-    wait for 10ns;
-    PISOACT(3) <='0';
-    wait for 110ns;
-end process;
+        -- Stop the clock and hence terminate the simulation
+        TbSimEnded <= '1';
+        wait;
+    end process;
 
-STIM: process
-begin
-    Button(1) <= '1';
-    wait for 10ns;
-    Button(1) <= '0';
-    wait for 400ns;
-    Button(3) <= '1';
-    wait for 10ns;
-    Button(3) <= '0';
-    wait for 900ns;
-    Button(2) <= '1';
-    wait for 10ns;
-    Button(2) <= '0';
-    wait for 50ns;
-    RESET<= '1';
-    wait for 10ns;
-    RESET <= '0';
-    Button(0) <= '1';
-    wait for 10ns;
-    Button(0) <= '0';
-    wait for 500ns;
-    Button(2) <= '1';
-    wait for 10ns;
-    Button(2) <= '0';
-    Button(3) <= '1';
-    wait for 10ns;
-    Button(3) <= '0';
-    wait for 500ns;
-end process; 
-end Behavioral;
+end tb;
+
+-- Configuration block below is required by some simulators. Usually no need to edit.
+
+configuration cfg_tb_Top of tb_Top is
+    for tb
+    end for;
+end cfg_tb_Top;
